@@ -1,0 +1,2028 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,interactive-widget=resizes-content">
+<title>Các thì quá khứ · Past Tenses</title>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f3f6fa;--ink:#1d2b3a;--mut:#5a6b7d;--pri:#2f5d8a;--line:#dbe3ec;
+  --ok:#2b9348;--bad:#d62839;
+  --c0:#2f6fed;--c0-bg:#e7efff;--c0-ink:#1b4fc4;
+  --c1:#e8590c;--c1-bg:#fff0e6;--c1-ink:#b84305;
+  --c2:#2b9348;--c2-bg:#e5f6ea;--c2-ink:#1f7a3a;
+  --c3:#7c3aed;--c3-bg:#f3e8ff;--c3-ink:#5b21b6;
+  --cb:#8a94ad;--cb-bg:#eceff4;--cb-ink:#44506d;
+  --fh:64px;
+}
+*{box-sizing:border-box}
+html,body{margin:0;-webkit-text-size-adjust:100%}
+body{
+  font-family:"Be Vietnam Pro",system-ui,"Segoe UI",Roboto,Arial,sans-serif;
+  background:var(--bg);color:var(--ink);
+  font-size:clamp(15px,.5vw + 13px,18px);line-height:1.6;
+  min-height:100dvh;
+  padding:0 env(safe-area-inset-right) 0 env(safe-area-inset-left);
+  overflow-wrap:anywhere;-webkit-tap-highlight-color:transparent;touch-action:manipulation;
+  user-select:none;-webkit-user-select:none;-webkit-touch-callout:none;
+}
+input{user-select:text;-webkit-user-select:text}
+header{
+  position:sticky;top:0;z-index:5;background:#fffffff0;
+  border-bottom:1px solid var(--line);
+  padding:calc(.4rem + env(safe-area-inset-top)) clamp(.7rem,3vw,1.5rem) .4rem;
+}
+.row{display:flex;gap:.5rem;align-items:center;justify-content:space-between;flex-wrap:wrap;margin:.2rem 0}
+.hrow{flex-wrap:nowrap}
+.ttl{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:15rem}
+#menu{flex:1;min-width:0}
+#gear{flex:none;padding:0}
+.bar{height:8px;background:var(--line);border-radius:9px;overflow:hidden}
+.bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--c0),var(--c2));transition:width .4s}
+.meta{font-size:.8rem;color:var(--mut);margin:.15rem 0}
+#set{margin:.2rem 0}
+#set select{flex:1 1 9rem}
+#vm{color:var(--bad);font-size:.85rem}
+main{max-width:58rem;margin:auto;padding:.5rem clamp(.7rem,3vw,1.5rem) calc(var(--fh) + 5.5rem)}
+.page{animation:up .35s}
+@keyframes up{from{opacity:0;transform:translateY(8px)}}
+.card{background:#fff;border-radius:18px;padding:1rem 1.2rem;margin:1rem 0;box-shadow:0 3px 14px #1d2b3a14;min-width:0}
+h1{font-size:clamp(1.5rem,4vw,2.2rem);line-height:1.2;margin:.8rem 0 0}
+h1 small{display:block;font-size:.5em;color:var(--mut);font-weight:400;margin-top:.15rem}
+h3{margin:.1rem 0 .6rem}
+h3 small{font-weight:400;color:var(--mut)}
+button,select{
+  font:inherit;font-size:16px;min-height:44px;min-width:44px;
+  border:1.5px solid var(--line);background:#fff;border-radius:12px;
+  padding:.2rem .8rem;cursor:pointer;color:var(--ink);
+}
+button:hover{border-color:var(--pri)}
+button:disabled{opacity:.55;cursor:default}
+select{max-width:100%;text-overflow:ellipsis}
+input[type=text]{
+  font:inherit;font-size:16px;min-height:44px;padding:.2rem .6rem;
+  border:1.5px solid var(--line);border-radius:10px;width:min(18rem,100%);
+}
+:focus-visible{outline:3px solid #f4a300;outline-offset:2px}
+.pri{background:var(--pri);color:#fff;border-color:var(--pri)}
+.soft{background:#eaf1fb;border-color:#c5d7f2;color:#1b4fc4;font-weight:600}
+footer{
+  position:fixed;bottom:0;left:0;right:0;z-index:6;
+  display:flex;justify-content:space-between;
+  padding:.5rem clamp(.7rem,3vw,1.5rem) calc(.5rem + env(safe-area-inset-bottom));
+  background:#fffffff0;border-top:1px solid var(--line);
+}
+.vi{display:block;color:#4b2f78;background:#f4eefb;border-radius:8px;padding:.2rem .6rem;margin:.3rem 0}
+.spk{font-size:1rem;padding:0 .4rem;margin-left:.3rem;border-radius:10px;vertical-align:middle;background:#eaf1fb;border:0}
+.hid{display:none!important}
+.say{background:#fff1b8;border-radius:6px}
+
+b.c0,.chip.c0{color:var(--c0-ink)}
+b.c1,.chip.c1{color:var(--c1-ink)}
+b.c2,.chip.c2{color:var(--c2-ink)}
+b.c3,.chip.c3{color:var(--c3-ink)}
+b.cb,.chip.cb{color:var(--cb-ink)}
+.chip{
+  display:inline-flex;flex-direction:column;align-items:center;justify-content:center;
+  padding:.25rem .65rem;border-radius:10px;font-weight:600;border:2px solid transparent;
+  line-height:1.25;vertical-align:middle;
+}
+.chip small{font-size:.72rem;font-weight:500;opacity:.85;margin-top:.1rem}
+.chip.c0{background:var(--c0-bg);border-color:var(--c0)}
+.chip.c1{background:var(--c1-bg);border-color:var(--c1)}
+.chip.c2{background:var(--c2-bg);border-color:var(--c2)}
+.chip.c3{background:var(--c3-bg);border-color:var(--c3)}
+.chip.cb{background:var(--cb-bg);border-color:var(--cb)}
+.chip.t{color:var(--ink)}
+
+u,mark{text-decoration:none;background:#ffe066;border-radius:4px;padding:0 .2em;color:inherit}
+.stage{display:flex;flex-wrap:wrap;gap:.45rem;align-items:center;min-height:5.5rem;padding:.8rem;background:#f6f9fd;border-radius:14px;margin:.6rem 0;min-width:0}
+.leg{display:flex;flex-wrap:wrap;gap:.4rem;font-size:.85rem;margin:.3rem 0}
+.ctl{display:flex;flex-wrap:wrap;gap:.4rem}
+.fm{display:flex;flex-wrap:wrap;gap:.3rem;align-items:center;margin:.4rem 0;min-width:0}
+.pair{border-left:4px solid var(--line);padding:.1rem .8rem;margin:.6rem 0;min-width:0}
+.pair p{margin:.3rem 0}
+.opt{display:block;width:100%;text-align:left;margin:.35rem 0}
+.opt.ok{background:#e3f6e8;border-color:var(--ok)}
+.opt.bad{background:#fde7ea;border-color:var(--bad)}
+.pop{animation:pop .5s}
+@keyframes pop{50%{transform:scale(1.015);box-shadow:0 0 0 6px #2b934833}}
+.vg{display:grid;grid-template-columns:repeat(auto-fit,minmax(13rem,1fr));gap:.5rem}
+.vwb{width:100%;text-align:left}
+.mis{padding:.5rem 0;border-bottom:1px dashed var(--line)}
+.mis:last-child{border-bottom:0}
+.x{color:var(--bad)}
+.k{color:var(--ok)}
+.tw{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:.9rem}
+td,th{border:1px solid var(--line);padding:.4rem .5rem;text-align:left;vertical-align:top}
+.capen{color:var(--mut);font-size:.9rem;margin:0 0 .4rem}
+.err-box{background:#fde7ea;border:2px solid var(--bad);color:#6b111b;border-radius:14px;padding:1rem 1.2rem;margin:1rem 0}
+
+/* ===== VISUAL COMPARE LAB (SVG TIMELINE + MORPHING + DECISION TREE) ===== */
+.dtree{display:grid;gap:.5rem;margin:.65rem 0}
+.dbranch-btn{
+  width:100%;text-align:left;display:flex;align-items:center;justify-content:space-between;gap:.6rem;
+  background:#f6f9fd;border:2px solid var(--line);border-left:5px solid var(--pri);
+  padding:.55rem .85rem;border-radius:12px;font-weight:600;transition:all .2s;
+}
+.dbranch-btn:hover{border-color:var(--pri);background:#eef5fc}
+.dbranch-btn.active{background:#e7efff;border-color:var(--c0);border-left-width:6px;box-shadow:0 2px 10px #2f6fed22}
+.dbranch-q{color:var(--ink);font-size:.95rem}
+.dbranch-a{
+  display:inline-flex;align-items:center;gap:.25rem;
+  background:var(--pri);color:#fff;padding:.2rem .65rem;border-radius:99px;
+  font-size:.82rem;white-space:nowrap;flex-shrink:0;
+}
+.dbranch-btn.active .dbranch-a{background:var(--c0)}
+
+.cmp-tabs{display:flex;gap:.45rem;flex-wrap:wrap;margin:.4rem 0 .8rem}
+.cmp-tab{
+  flex:1 1 auto;font-weight:700;padding:.45rem .85rem;border-radius:12px;
+  border:2px solid var(--line);background:#f8fafc;color:var(--mut);transition:all .2s;
+}
+.cmp-tab.active{
+  background:var(--pri);color:#fff;border-color:var(--pri);
+  box-shadow:0 3px 10px rgba(47,93,138,.25);transform:translateY(-1px);
+}
+
+.tl-box{
+  background:linear-gradient(180deg,#f8fbff 0%,#eef4fb 100%);
+  border:1.5px solid #d5e2f2;border-radius:16px;padding:.75rem .6rem .55rem;margin:.5rem 0 .8rem;
+  text-align:center;overflow:hidden;
+}
+.tl-svg{width:100%;max-width:500px;height:auto;display:block;margin:0 auto;overflow:visible}
+
+/* SVG Timeline Keyframes */
+@keyframes tlDotWave{
+  0%,100%{transform:scale(1);opacity:.5}
+  50%{transform:scale(1.38);opacity:1}
+}
+@keyframes tlRadar{
+  0%{r:10px;opacity:.85;stroke-width:3.5px}
+  100%{r:42px;opacity:0;stroke-width:1px}
+}
+@keyframes tlBridgeFlow{
+  0%{stroke-dashoffset:180}
+  65%,100%{stroke-dashoffset:0}
+}
+@keyframes tlNowGlow{
+  0%,55%{transform:scale(.9);opacity:.55}
+  75%,100%{transform:scale(1.22);opacity:1}
+}
+@keyframes morphFlip{
+  0%{opacity:0;transform:translateY(10px) scale(.92)}
+  60%{opacity:1;transform:translateY(-2px) scale(1.03)}
+  100%{opacity:1;transform:translateY(0) scale(1)}
+}
+
+.tl-rep-dot{transform-box:fill-box;transform-origin:center;animation:tlDotWave 1.8s infinite ease-in-out}
+.tl-radar-1{animation:tlRadar 2s infinite ease-out}
+.tl-radar-2{animation:tlRadar 2s infinite ease-out .9s}
+.tl-bridge-line{stroke-dasharray:180;stroke-dashoffset:180;animation:tlBridgeFlow 2.4s infinite ease-out}
+.tl-bridge-end{transform-box:fill-box;transform-origin:center;animation:tlNowGlow 2.4s infinite ease-out}
+
+.morph-stage{
+  background:#f6f9fd;border:2px dashed #c5d7f2;border-radius:16px;
+  padding:.9rem 1rem;margin:.6rem 0;transition:all .25s;
+}
+.morph-chunks{display:flex;flex-wrap:wrap;gap:.4rem;align-items:center;min-height:3.6rem}
+.morph-chip{transition:transform .25s,background .25s}
+.morph-chip.changed{
+  animation:morphFlip .42s cubic-bezier(.22,1,.36,1);
+  box-shadow:0 3px 10px rgba(232,89,12,.18);
+}
+.cmp-info-grid{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(14rem,1fr));
+  gap:.65rem;margin:.75rem 0;
+}
+.cmp-info-item{
+  background:#f8fafc;border:1px solid var(--line);border-radius:12px;padding:.6rem .8rem;
+}
+.cmp-side-row{
+  cursor:pointer;padding:.45rem .75rem;border-radius:10px;border:1.5px solid transparent;
+  transition:all .15s;
+}
+.cmp-side-row:hover{background:#f6f9fd;border-color:var(--line)}
+.cmp-side-row.active{background:#eef6ff;border-color:var(--c0)}
+
+/* Audio bar */
+.ab{
+  position:fixed;left:0;right:0;bottom:var(--fh);z-index:7;
+  display:flex;gap:.5rem;align-items:center;
+  padding:.5rem clamp(.7rem,3vw,1.5rem);background:#1d2b3af2;color:#fff;
+}
+.ab button{background:#fff;color:var(--ink);border:0;font-size:1.1rem}
+.abm{flex:1;min-width:0}
+.att{font-size:.85rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-bottom:.25rem}
+.ab .bar{background:#ffffff40}
+.ab .bar i{transition:width .2s linear}
+
+body.kb footer,body.kb .ab{display:none}
+body.kb main{padding-bottom:40vh}
+
+@media print{body *{display:none!important}body:after{content:"Chức năng in đã bị tắt.";display:block}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+
+@media (max-width:640px){
+  header{padding-bottom:.25rem}
+  .ttl{display:none}
+  .card{padding:.8rem .9rem;margin:.7rem 0;border-radius:14px}
+  h1{margin:.5rem 0 0}
+  .stage{min-height:4.5rem;padding:.6rem;gap:.35rem}
+  .chip{padding:.2rem .5rem}
+  .ctl button{flex:1 1 calc(50% - .4rem)}
+  .opt{padding:.55rem .8rem;min-height:48px}
+  .vg{grid-template-columns:1fr}
+  footer{gap:.6rem}
+  footer button{flex:1;min-height:48px}
+  .spk{min-width:40px;min-height:40px}
+  input[type=text]{width:100%;margin-bottom:.4rem}
+  .stbl,.stbl tbody,.stbl tr,.stbl td{display:block;width:100%}
+  .stbl tr:first-child{display:none}
+  .stbl tr{border:1px solid var(--line);border-radius:12px;padding:.5rem .7rem;margin:.6rem 0;background:#fbfdff}
+  .stbl td{border:0;padding:.25rem 0}
+  .stbl td::before{content:attr(data-l);display:block;font-size:.75rem;color:var(--mut);font-weight:600}
+  .stbl td:first-child::before{display:none}
+  .dbranch-btn{flex-direction:column;align-items:flex-start}
+  .cmp-tab{flex:1 1 calc(50% - .45rem);font-size:.9rem;padding:.4rem .5rem}
+}
+@media (max-height:480px) and (orientation:landscape){header{position:static}.ab{padding:.3rem 1rem}}
+</style>
+</head>
+<body>
+<script type="text/plain" id="lesson-data">
+##LESSON
+Tiêu đề: Các thì quá khứ | Past Tenses
+Chủ điểm từ vựng: lễ hội và những dịp đặc biệt (festivals and special occasions)
+Mục tiêu: Sau bài học, bạn chọn đúng thì quá khứ, kể được việc đã xong, việc đang diễn ra và việc xảy ra trước một việc khác.
+Thành phần tô màu: S = Chủ ngữ | AUX = Trợ động từ | V = Động từ | O = Tân ngữ
+
+##INTRO
+Là gì, dùng khi nào: Bài này nói về ba thì quá khứ trong tiếng Anh. Quá khứ đơn kể việc đã xảy ra và đã xong. Quá khứ tiếp diễn nói về việc đang diễn ra tại một mốc trong quá khứ. Quá khứ hoàn thành nói về việc xảy ra trước một việc khác trong quá khứ. Ba thì này là ba cách nhìn một mốc thời gian đã qua.
+Câu hỏi gợi suy nghĩ: Trong tiếng Việt, câu "Mẹ tôi đã nấu ăn" có thể là nấu xong rồi, đang nấu lúc đó, hoặc nấu trước một việc khác. Tiếng Anh cho người nghe biết ý nào bằng cách nào?
+Ý chính cần chốt: Tiếng Anh thể hiện ý nghĩa ngay trên động từ: V2/ed (dạng quá khứ, như visited, went), was/were + V-ing, had + V3 (V3 là dạng quá khứ phân từ, như eaten, been, lived). Hãy nhìn từ chỉ thời gian hoặc việc thứ hai trong câu để chọn đúng thì.
+
+##POINT 1
+Tên: Past Simple | Quá khứ đơn
+Công thức khẳng định: S + V2/ed + O
+Công thức phủ định: S + did + not + V + O
+Công thức nghi vấn: Did + S + V + O?
+Cách dùng: 1) Việc đã xảy ra và đã xong ở quá khứ, không còn liên quan đến bây giờ. 2) Chính tả V2/ed: thêm -ed (visit -> visited); phụ âm + y đổi thành -ied (carry -> carried); động từ bất quy tắc có dạng riêng (go -> went, buy -> bought). 3) Động từ to be ở quá khứ: I/he/she/it dùng was; you/we/they dùng were.
+Dấu hiệu nhận biết: yesterday, last night, last Sunday, last year, two days ago, in 2019
+Quy tắc vàng: EN: Finished in the past? Use the past form. | VI: Việc đã xong ở quá khứ thì dùng động từ dạng quá khứ (V2/ed). Sau did/didn't luôn dùng động từ nguyên mẫu, không thêm -ed.
+
+Ví dụ 1: [S: My mother] [V: {cooked}] [O: a big dinner] [T: {yesterday}]
+Ví dụ 1 nghĩa: Hôm qua mẹ tôi nấu một bữa tối lớn.
+Ví dụ 2: [AUX: {Did}] [S: the guests] [V: enjoy] [O: the party] [T: {last night?}]
+Ví dụ 2 nghĩa: Tối qua các vị khách có thích bữa tiệc không?
+
+Từ vựng:
+party | n | /ˈpɑːti/ | bữa tiệc
+gift | n | /ɡɪft/ | món quà
+guest | n | /ɡest/ | khách mời
+cake | n | /keɪk/ | bánh ngọt
+cook | v | /kʊk/ | nấu ăn
+
+Lỗi thường gặp:
+✗ We visit our uncle last Sunday. → ✓ We visited our uncle last Sunday. | Last Sunday là việc đã xong nên động từ phải ở dạng quá khứ (-ed). Tiếng Việt không đổi động từ nên dễ quên.
+✗ I have bought a gift yesterday. → ✓ I bought a gift yesterday. | Yesterday là mốc đã qua hẳn nên dùng quá khứ đơn, không dùng have + V3. Nhiều bạn nhầm vì tiếng Việt đều nói "đã".
+
+Bài tập:
+Q1: Lan ______ her uncle last Sunday.
+A. visits  B. visit  C. visited  D. is visiting
+Đáp án: C
+Giải thích: *last Sunday* → quá khứ đơn; việc đã xong nên thêm *-ed*: *visited*.
+
+Q2: Tom ______ the gift box yesterday.
+A. carryed  B. carried  C. carries  D. carry
+Đáp án: B
+Giải thích: *yesterday* → quá khứ đơn; *carry* có phụ âm + y nên đổi y thành *-ied*: *carried*.
+
+Q3: Mai ______ eat the cake last night.
+A. didn't  B. doesn't  C. don't  D. wasn't
+Đáp án: A
+Giải thích: *last night* → quá khứ đơn; phủ định là *didn't* + động từ nguyên mẫu *eat*.
+
+Q4: Choose the correct sentence.
+A. Did your parents invited many guests last year?  B. Did your parents invite many guests last year?  C. Do your parents invited many guests last year?  D. Were your parents invite many guests last year?
+Đáp án: B
+Giải thích: *last year* → quá khứ đơn; câu hỏi dùng *Did* + chủ ngữ + động từ nguyên mẫu *invite*, không thêm -d.
+
+Q5: My sister ______ a lantern at the festival last year.
+A. has bought  B. buyed  C. buy  D. bought
+Đáp án: D
+Giải thích: *last year* → quá khứ đơn, không dùng *has bought*; *buy* là động từ bất quy tắc, dạng quá khứ là *bought*.
+
+##POINT 2
+Tên: Past Continuous | Quá khứ tiếp diễn
+Công thức khẳng định: S + was/were + V-ing + O
+Công thức phủ định: S + was/were + not + V-ing + O
+Công thức nghi vấn: Was/Were + S + V-ing + O?
+Cách dùng: 1) Việc đang diễn ra tại một mốc giờ cụ thể trong quá khứ. 2) Việc đang diễn ra thì có việc ngắn khác cắt ngang (when + quá khứ đơn) hoặc hai việc diễn ra song song (while). 3) Chính tả V-ing: tận cùng -e bỏ e thêm -ing (dance -> dancing); 1 nguyên âm + 1 phụ âm thì gấp đôi phụ âm (run -> running).
+Dấu hiệu nhận biết: this time yesterday, this time last night, at 8 p.m. last night, at that moment, while, when + S + V2/ed
+Quy tắc vàng: EN: At that time, use was or were plus verb-ing. | VI: I/he/she/it dùng was; you/we/they dùng were. Không dùng -ing với động từ trạng thái (như know, like, love, want).
+
+Ví dụ 1: [S: My sister] [AUX: {was}] [V: {singing}] [T: {this time yesterday}]
+Ví dụ 1 nghĩa: Giờ này hôm qua, chị tôi đang hát.
+Ví dụ 2: [S: The children] [AUX: {were not}] [V: {dancing}] [T: {when we arrived}]
+Ví dụ 2 nghĩa: Lúc chúng tôi đến, bọn trẻ đang không nhảy múa.
+
+Từ vựng:
+sing | v | /sɪŋ/ | hát
+dance | v | /dɑːns/ | nhảy, khiêu vũ
+photo | n | /ˈfəʊtəʊ/ | bức ảnh
+lantern | n | /ˈlæntən/ | đèn lồng
+decorate | v | /ˈdekəreɪt/ | trang trí
+
+Lỗi thường gặp:
+✗ My brother taking photos this time last night. → ✓ My brother was taking photos this time last night. | Thiếu was. Tiếng Việt chỉ nói "đang" nên nhiều bạn quên was/were.
+✗ The guests was dancing at that time. → ✓ The guests were dancing at that time. | Guests là số nhiều nên dùng were, không dùng was. Was chỉ đi với I/he/she/it.
+
+Bài tập:
+Q1: Anna ______ a photo this time yesterday.
+A. takes  B. was taking  C. take  D. taking
+Đáp án: B
+Giải thích: *this time yesterday* → quá khứ tiếp diễn; *Anna* là "she" nên dùng *was* + V-ing: *was taking*.
+
+Q2: Our guests ______ this time last night.
+A. was dancing  B. were danceing  C. dancing  D. were dancing
+Đáp án: D
+Giải thích: *this time last night* → quá khứ tiếp diễn; *guests* số nhiều nên dùng *were*; *dance* bỏ e rồi thêm -ing: *dancing*.
+
+Q3: Mai and Tuan ______ singing when the party started.
+A. isn't  B. weren't  C. wasn't  D. don't
+Đáp án: B
+Giải thích: *when the party started* → việc đang diễn ra lúc tiệc bắt đầu; *Mai and Tuan* là số nhiều nên dùng *weren't* + V-ing.
+
+Q4: Choose the correct sentence.
+A. Were your cousins decorating the house this time last night?  B. Was your cousins decorating the house this time last night?  C. Were your cousins decorate the house this time last night?  D. Did your cousins decorating the house this time last night?
+Đáp án: A
+Giải thích: *this time last night* → quá khứ tiếp diễn; *cousins* số nhiều nên câu hỏi dùng *Were* + chủ ngữ + *decorating*.
+
+Q5: Tom ______ the song, so he sang with us last night.
+A. was knowing  B. knows  C. knew  D. know
+Đáp án: C
+Giải thích: *know* là động từ trạng thái nên không dùng -ing (không dùng *was knowing*); *last night* → quá khứ đơn: *knew*.
+
+##POINT 3
+Tên: Past Perfect | Quá khứ hoàn thành
+Công thức khẳng định: S + had + V3 + O
+Công thức phủ định: S + had + not + V3 + O
+Công thức nghi vấn: Had + S + V3 + O?
+Cách dùng: 1) Việc xảy ra và hoàn tất trước một việc khác trong quá khứ: việc xảy ra trước dùng had + V3, việc xảy ra sau dùng quá khứ đơn. 2) Hay đi với by the time (vào lúc mà), before, after; already (đã... rồi) đứng sau had. 3) V3 (quá khứ phân từ): thêm -ed (finish -> finished) hoặc biến đổi bất quy tắc (leave -> left, see -> seen, write -> written, eat -> eaten).
+Dấu hiệu nhận biết: by the time + S + V2/ed, before + S + V2/ed, after + S + had + V3, already, before last night, by 8 p.m. yesterday
+Quy tắc vàng: EN: First event in the past? Use had plus V3. | VI: Việc xảy ra trước dùng had + V3 cho mọi chủ ngữ. Việc xảy ra sau dùng quá khứ đơn. Không dùng has/have.
+
+Ví dụ 1: [S: Mum] [AUX: {had}] [V: {finished}] [O: the dinner] [T: {by the time} we arrived]
+Ví dụ 1 nghĩa: Lúc chúng tôi đến thì mẹ đã chuẩn bị xong bữa tối.
+Ví dụ 2: [AUX: {Had}] [S: the guests] [V: {left}] [T: {before} the fireworks started?]
+Ví dụ 2 nghĩa: Các vị khách đã rời đi trước khi pháo hoa bắt đầu phải không?
+
+Từ vựng:
+arrive | v | /əˈraɪv/ | đến nơi
+leave | v | /liːv/ | rời đi
+finish | v | /ˈfɪnɪʃ/ | hoàn thành
+wedding | n | /ˈwedɪŋ/ | đám cưới
+fireworks | n | /ˈfaɪəwɜːks/ | pháo hoa
+
+Lỗi thường gặp:
+✗ Dad had finish the cake by the time we came. → ✓ Dad had finished the cake by the time we came. | Sau had phải dùng V3 (finished), không dùng động từ nguyên mẫu. Tiếng Việt không đổi động từ nên dễ quên.
+✗ The guests has left by the time we arrived. → ✓ The guests had left by the time we arrived. | Việc xảy ra trước một việc quá khứ dùng had, không dùng has. Nhiều bạn nhầm vì has/have quen thuộc hơn.
+
+Bài tập:
+Q1: By the time we came, Mum ______ cooking dinner.
+A. finished  B. had finished  C. has finished  D. was finishing
+Đáp án: B
+Giải thích: *By the time we came* → việc xong trước một việc quá khứ, dùng quá khứ hoàn thành *had* + V3: *had finished*.
+
+Q2: Before Lan arrived at the party, the guests ______.
+A. have left  B. had leave  C. has left  D. had left
+Đáp án: D
+Giải thích: *Before Lan arrived* → việc xảy ra trước trong quá khứ; *had* dùng cho mọi chủ ngữ + V3: *had left*.
+
+Q3: By the time the fireworks started, Ben ______ a gift.
+A. hadn't bought  B. doesn't buy  C. hasn't bought  D. hadn't buy
+Đáp án: A
+Giải thích: *By the time the fireworks started* → quá khứ hoàn thành; phủ định là *hadn't* + V3 của buy là *bought*.
+
+Q4: Choose the correct sentence.
+A. Has the guests eaten the cake by the time we arrived?  B. Had the guests ate the cake by the time we arrived?  C. Had the guests eaten the cake by the time we arrived?  D. Did the guests eaten the cake by the time we arrived?
+Đáp án: C
+Giải thích: *By the time we arrived* → quá khứ hoàn thành; câu hỏi dùng *Had* + chủ ngữ + V3 của eat là *eaten*.
+
+Q5: Choose the sentence with a mistake.
+A. By the time we arrived, Nam had made two lanterns.  B. Before the wedding started, my cousin had arrived.  C. By the time we came, the guests had already left.  D. By the time we came, Nam had saw the fireworks.
+Đáp án: D
+Giải thích: *By the time we came* → quá khứ hoàn thành; sau *had* phải dùng V3 *seen*, không dùng *saw*. Ba câu còn lại đều đúng.
+
+##COMPARE
+Ý chính: Trên trục thời gian, hãy đánh dấu một mốc "lúc đó" trong quá khứ và "bây giờ" ở bên phải. Quá khứ đơn là việc đã xong hẳn trước bây giờ; tiếp diễn đang diễn ra quanh mốc "lúc đó"; hoàn thành đã xong trước mốc "lúc đó".
+Cây quyết định: Việc này xảy ra và xong ở một thời điểm quá khứ? → Quá khứ đơn ; Đang diễn ra tại một mốc trong quá khứ? → Quá khứ tiếp diễn ; Xảy ra trước một việc hoặc mốc quá khứ khác? → Quá khứ hoàn thành
+
+Thì 1: Past Simple | Quá khứ đơn
+Hình thức: S + V2/ed
+Trên trục thời gian: Một việc nằm ở quá khứ, đã xong hẳn trước bây giờ và không còn liên quan đến bây giờ.
+Câu hỏi tự hỏi: Việc này đã xảy ra và xong ở một thời điểm quá khứ không?
+Dấu hiệu: yesterday, last night, last year, two days ago
+
+Thì 2: Past Continuous | Quá khứ tiếp diễn
+Hình thức: S + was/were + V-ing
+Trên trục thời gian: Một việc đang diễn ra ngay quanh mốc "lúc đó" trong quá khứ.
+Câu hỏi tự hỏi: Việc này có đang diễn ra tại mốc quá khứ đó không?
+Dấu hiệu: this time yesterday, this time last night, at that moment, while
+
+Thì 3: Past Perfect | Quá khứ hoàn thành
+Hình thức: S + had + V3
+Trên trục thời gian: Việc đã xong trước mốc "lúc đó", tức là xảy ra sớm hơn một việc quá khứ khác.
+Câu hỏi tự hỏi: Việc này có xảy ra trước một việc quá khứ khác không?
+Dấu hiệu: by the time, already, before, after
+
+Ba câu cùng động từ:
+Câu đơn: [S: Linh] [V: {cooked}] [O: dinner] [T: {yesterday}]
+Câu đơn nghĩa: Hôm qua Linh nấu bữa tối.
+Câu tiếp diễn: [S: Linh] [AUX: {was}] [V: {cooking}] [O: dinner] [T: {this time yesterday}]
+Câu tiếp diễn nghĩa: Giờ này hôm qua, Linh đang nấu bữa tối.
+Câu hoàn thành: [S: Linh] [AUX: {had}] [V: {cooked}] [O: dinner] [T: {by the time} we arrived]
+Câu hoàn thành nghĩa: Lúc chúng tôi đến thì Linh đã nấu xong bữa tối.
+Câu chốt: Khi chỉ đổi thì, nghĩa đổi theo: việc đã xong ở quá khứ, việc đang diễn ra lúc đó, hoặc việc xong trước một việc khác.
+
+##REVIEW
+Ghi chú: Dùng dạng đầy đủ, không viết tắt (was cooking, had finished, did not go...).
+Q1: Yesterday my father ______ (buy) a gift.
+Đáp án: bought
+Giải thích: *Yesterday* → quá khứ đơn; *buy* là động từ bất quy tắc, dạng quá khứ là *bought*.
+
+Q2: This time last night, Anna ______ (make) a lantern.
+Đáp án: was making
+Giải thích: *This time last night* → quá khứ tiếp diễn; *Anna* là "she" nên dùng *was*; *make* bỏ e rồi thêm -ing: *making*.
+
+Q3: By the time the party started, my uncle ______ (arrive).
+Đáp án: had arrived
+Giải thích: *By the time the party started* → việc xong trước một việc quá khứ, quá khứ hoàn thành; dùng *had* + V3: *had arrived*.
+
+Q4: In 2019, my cousins ______ (not come) to the festival.
+Đáp án: did not come
+Giải thích: *In 2019* → quá khứ đơn; phủ định là *did not* + động từ nguyên mẫu *come*.
+
+Q5: This time yesterday, the children ______ (run) around the party hall.
+Đáp án: were running
+Giải thích: *This time yesterday* → quá khứ tiếp diễn; *children* số nhiều nên dùng *were*; *run* gấp đôi chữ n: *running*.
+
+Q6: By the time we came, Lan ______ (write) all the invitation cards.
+Đáp án: had written
+Giải thích: *By the time we came* → quá khứ hoàn thành; dùng *had* + V3 của write là *written*.
+</script>
+
+<header>
+  <div class="row hrow">
+    <b class="ttl" id="hdr-ttl">📘 Bài học</b>
+    <select id="menu" aria-label="Danh sách phần học"></select>
+    <button id="gear" aria-label="Cài đặt giọng đọc" aria-expanded="false">⚙️</button>
+  </div>
+  <div class="bar"><i id="pb"></i></div>
+  <div class="row meta">
+    <span id="pg"></span>
+    <span>⏱ <span id="tp">0:00</span> · Σ <span id="tt">0:00</span></span>
+  </div>
+  <div id="set" class="row hid">
+    <select id="vc" aria-label="Giọng đọc">
+      <option value="en-US">🇺🇸 Giọng Mỹ</option>
+      <option value="en-GB">🇬🇧 Giọng Anh</option>
+    </select>
+    <select id="sp" aria-label="Tốc độ đọc">
+      <option value="1">Tốc độ thường</option>
+      <option value="0.6">Đọc chậm</option>
+    </select>
+  </div>
+  <div id="vm"></div>
+</header>
+
+<main id="m"></main>
+
+<div id="ab" class="ab hid" role="region" aria-label="Trình phát âm thanh">
+  <button id="ap" aria-label="Tạm dừng">⏸</button>
+  <button id="as" aria-label="Dừng hẳn">⏹</button>
+  <div class="abm">
+    <div id="at" class="att"></div>
+    <div class="bar"><i id="apb"></i></div>
+  </div>
+</div>
+
+<footer>
+  <button id="pv">← Trước</button>
+  <button id="nx" class="pri">Tiếp →</button>
+</footer>
+
+<script>
+/* =====================  HÀM HỖ TRỢ  ===================== */
+const $ = s => document.querySelector(s);
+const esc = s => String(s || "").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
+const cap = s => s ? s.charAt(0).toUpperCase() + s.slice(1) : "";
+const hl = s => esc(s).replace(/\*(.+?)\*/g,"<mark>$1</mark>");
+const plain = s => String(s || "").replace(/<[^>]+>/g,"").replace(/\{(.+?)\}/g,"$1").replace(/[\[\]*]/g,"").replace(/\s+/g," ").trim();
+const sp = t => `<button class="spk" data-say="${esc(plain(t))}" aria-label="Nghe">🔊</button>`;
+const vi = t => t ? `<span class="vi">${hl(t)}</span>` : "";
+const fmt = s => Math.floor(s/60) + ":" + String(s%60).padStart(2,"0");
+const hasVi = s => /[àáạảãâầấậẩẫăằắặẳẵèéẹẻẽêềếệểễìíịỉĩòóọỏõôồốộổỗơờớợởỡùúụủũưừứựửữỳýỵỷỹđ]/i.test(s);
+
+function splitBilingual(raw) {
+  const s = String(raw || "").trim();
+  const idx = s.indexOf(" | ");
+  if (idx === -1) return { vi: s, en: "" };
+  const a = s.slice(0, idx).trim();
+  const b = s.slice(idx + 3).trim();
+  if (hasVi(b) && !hasVi(a)) return { vi: b, en: a };
+  return { vi: a, en: b };
+}
+
+function slugify(s) {
+  return String(s || "lesson")
+    .normalize("NFD").replace(/[\u0300-\u036f]/g,"")
+    .replace(/[đĐ]/g,"d")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g,"-")
+    .replace(/^-+|-+$/g,"") || "default";
+}
+
+function qtext(s) {
+  return esc(s)
+    .replace(/^Choose the correct sentence\.?/i, "Chọn câu đúng:")
+    .replace(/^Choose the sentence with a mistake\.?/i, "Chọn câu có lỗi sai:")
+    .replace(/^Choose the passive:/i, "Chọn câu bị động của:");
+}
+
+/* =====================  TRÌNH ĐỌC DỮ LIỆU (PARSER)  ===================== */
+function parseLessonData(rawText) {
+  const errors = [];
+  const cleanRaw = String(rawText || "").replace(/\u00A0/g, " ");
+  const lines = cleanRaw.split(/\r?\n/);
+  const data = {
+    lesson: { titleVi: "Bài học", titleEn: "", vocabTopic: "", goal: "", legend: [], roleMap: {} },
+    intro: { whatWhen: "", thinkQ: "", mainPoint: "", steps: [] },
+    points: [],
+    compare: null,
+    review: { note: "", questions: [] }
+  };
+
+  let section = "";
+  let curPoint = null;
+  let curCmpItem = null;
+  let lastCmpEx = null;
+  let mode = "";
+  let curQ = null;
+
+  const flushQuestion = () => {
+    if (!curQ) return;
+    if (section === "REVIEW") {
+      if (!curQ.stem || !curQ.ans) {
+        errors.push(`Dòng ${curQ.line}: Câu hỏi ôn tập ${curQ.id} thiếu đề bài hoặc "Đáp án:".`);
+      }
+      data.review.questions.push(curQ);
+    } else if (curPoint) {
+      if (!curQ.stem || !curQ.options || curQ.options.length < 2 || curQ.ansIdx === undefined) {
+        errors.push(`Dòng ${curQ.line}: Câu hỏi ${curQ.id} (${curPoint.id}) thiếu phương án lựa chọn hoặc "Đáp án:".`);
+      }
+      curPoint.questions.push(curQ);
+    }
+    curQ = null;
+  };
+
+  const normLabel = lbl => lbl
+    .replace(/\([^)]*\)/g, "")
+    .replace(/[,.:]/g, "")
+    .replace(/\s+/g, " ")
+    .trim()
+    .toLowerCase();
+
+  for (let idx = 0; idx < lines.length; idx++) {
+    const lineNo = idx + 1;
+    const line = lines[idx].trim();
+    if (!line) continue;
+
+    if (/^##LESSON\b/i.test(line)) { flushQuestion(); section = "LESSON"; mode = ""; continue; }
+    if (/^##INTRO\b/i.test(line)) { flushQuestion(); section = "INTRO"; mode = ""; continue; }
+    if (/^##POINT\b/i.test(line)) {
+      flushQuestion();
+      section = "POINT";
+      mode = "";
+      curPoint = {
+        id: line.replace(/^##/, "").trim(),
+        nameVi: "", nameEn: "",
+        formulas: [],
+        usage: "", signals: [], goldenRule: null,
+        examples: {},
+        steps: [], vocab: [], mistakes: [],
+        questions: []
+      };
+      data.points.push(curPoint);
+      continue;
+    }
+    if (/^##COMPARE\b/i.test(line)) {
+      flushQuestion();
+      section = "COMPARE";
+      mode = "";
+      data.compare = { mainIdea: "", decisionTree: [], items: [], sameVerbTitle: "Ba câu cùng động từ", examples: [], closing: "" };
+      curCmpItem = null;
+      lastCmpEx = null;
+      continue;
+    }
+    if (/^##REVIEW\b/i.test(line)) { flushQuestion(); section = "REVIEW"; mode = "review"; continue; }
+
+    // Inside ##COMPARE
+    if (section === "COMPARE" && data.compare) {
+      if (/^(Ba câu cùng động từ|Các câu so sánh)\s*:/i.test(line)) {
+        data.compare.sameVerbTitle = line.replace(/:$/, "").trim();
+        curCmpItem = null;
+        mode = "cmp-ex";
+        continue;
+      }
+      const colonIdx = line.indexOf(":");
+      if (colonIdx !== -1) {
+        const rawLbl = line.slice(0, colonIdx).trim();
+        const val = line.slice(colonIdx + 1).trim();
+        const nl = normLabel(rawLbl);
+
+        if (nl === "ý chính") { data.compare.mainIdea = val; continue; }
+        if (nl === "cây quyết định") {
+          data.compare.decisionTree = val.split(";").map(s => s.trim()).filter(Boolean);
+          continue;
+        }
+        if (/^(thì|điểm)\s*\d+$/i.test(nl)) {
+          const b = splitBilingual(val);
+          curCmpItem = { label: rawLbl, nameVi: b.vi, nameEn: b.en, tlType: "", form: "", timeline: "", selfQ: "", signals: [] };
+          data.compare.items.push(curCmpItem);
+          mode = "cmp-item";
+          continue;
+        }
+        if (curCmpItem && mode === "cmp-item") {
+          if (nl === "kiểu trục") { curCmpItem.tlType = val.toLowerCase(); continue; }
+          if (nl === "hình thức") { curCmpItem.form = val; continue; }
+          if (nl === "trên trục thời gian") { curCmpItem.timeline = val; continue; }
+          if (nl === "câu hỏi tự hỏi") { curCmpItem.selfQ = val; continue; }
+          if (nl === "dấu hiệu") {
+            curCmpItem.signals = val.split(",").map(s => s.trim()).filter(Boolean);
+            continue;
+          }
+        }
+        if (nl === "câu chốt") { data.compare.closing = val; continue; }
+        if (nl.startsWith("câu ")) {
+          if (nl.endsWith("nghĩa")) {
+            if (lastCmpEx) lastCmpEx.vi = val;
+          } else {
+            lastCmpEx = { label: rawLbl, chunks: parseChunks(val, lineNo, errors), vi: "" };
+            data.compare.examples.push(lastCmpEx);
+          }
+          continue;
+        }
+      }
+      errors.push(`Dòng ${lineNo}: Không nhận diện được dòng trong ##COMPARE: "${line.slice(0, 60)}".`);
+      continue;
+    }
+
+    const qMatch = line.match(/^Q(\d+)\s*(nghĩa)?\s*:\s*(.+)$/i);
+    if (qMatch) {
+      const qNum = qMatch[1];
+      const isMeaning = !!qMatch[2];
+      const val = qMatch[3].trim();
+      if (isMeaning) {
+        if (curQ && curQ.num === qNum) curQ.vi = val;
+        continue;
+      } else {
+        flushQuestion();
+        curQ = {
+          id: "Q" + qNum,
+          num: qNum,
+          stem: val,
+          options: [],
+          ansLetter: "",
+          ansIdx: undefined,
+          ans: "",
+          explain: "",
+          vi: "",
+          line: lineNo
+        };
+        continue;
+      }
+    }
+
+    if (curQ && section === "POINT" && /^A\.\s+/i.test(line)) {
+      const parts = line.split(/\s{2,}(?=[A-D]\.\s)/);
+      if (parts.length < 2) {
+        errors.push(`Dòng ${lineNo}: Không tách được các phương án A, B, C, D (cần ít nhất 2 khoảng trắng trước mỗi chữ cái).`);
+      }
+      curQ.options = parts.map(p => p.replace(/^[A-D]\.\s*/i, "").trim());
+      continue;
+    }
+
+    if (/^Bài tập/i.test(line) && line.includes(":")) {
+      flushQuestion(); mode = "practice"; continue;
+    }
+    if (/^Từ vựng\s*:/i.test(line)) {
+      flushQuestion(); mode = "vocab";
+      const rest = line.slice(line.indexOf(":") + 1).trim();
+      if (rest && curPoint) parseVocabLine(rest, curPoint, lineNo, errors);
+      continue;
+    }
+    if (/^Lỗi thường gặp\s*:/i.test(line)) {
+      flushQuestion(); mode = "mistakes";
+      const rest = line.slice(line.indexOf(":") + 1).trim();
+      if (rest && curPoint) parseMistakeLine(rest, curPoint, lineNo, errors);
+      continue;
+    }
+    if (/^Các bước chuyển\s*:/i.test(line)) {
+      flushQuestion(); mode = "steps";
+      const rest = line.slice(line.indexOf(":") + 1).trim();
+      if (rest) parseStepLine(rest, curPoint ? curPoint.steps : data.intro.steps, lineNo, errors);
+      continue;
+    }
+
+    const exMatch = line.match(/^Ví dụ\s*(\d+)\s*(gốc|đích|nghĩa)?\s*:\s*(.+)$/i);
+    if (exMatch && curPoint) {
+      flushQuestion(); mode = "";
+      const num = exMatch[1];
+      const kind = (exMatch[2] || "").toLowerCase();
+      const val = exMatch[3].trim();
+      if (!curPoint.examples[num]) curPoint.examples[num] = { num, chunks: null, origChunks: null, destChunks: null, vi: "", line: lineNo };
+      if (kind === "nghĩa") {
+        curPoint.examples[num].vi = val;
+      } else if (kind === "gốc") {
+        curPoint.examples[num].origChunks = parseChunks(val, lineNo, errors);
+      } else if (kind === "đích") {
+        curPoint.examples[num].destChunks = parseChunks(val, lineNo, errors);
+      } else {
+        curPoint.examples[num].chunks = parseChunks(val, lineNo, errors);
+      }
+      continue;
+    }
+
+    const colonIdx = line.indexOf(":");
+    if (colonIdx !== -1 && !line.startsWith("✗") && !line.startsWith("B1") && !line.startsWith("B2") && !line.startsWith("B3") && !line.startsWith("B4") && !line.includes(" | ")) {
+      const rawLabel = line.slice(0, colonIdx).trim();
+      const val = line.slice(colonIdx + 1).trim();
+      const nl = normLabel(rawLabel);
+
+      if (nl.startsWith("đáp án") && curQ) {
+        if (section === "REVIEW") {
+          curQ.ans = val;
+        } else {
+          const letter = val.toUpperCase().replace(/[^A-D]/g, "");
+          curQ.ansLetter = letter;
+          curQ.ansIdx = "ABCD".indexOf(letter);
+          if (curQ.ansIdx === -1) errors.push(`Dòng ${lineNo}: Đáp án "${val}" không hợp lệ.`);
+        }
+        continue;
+      }
+      if (nl.startsWith("giải thích") && curQ) {
+        curQ.explain = val;
+        continue;
+      }
+    }
+
+    if (mode === "vocab" && line.includes("|") && curPoint) {
+      parseVocabLine(line, curPoint, lineNo, errors);
+      continue;
+    }
+    if (mode === "mistakes" && (line.includes("→") || line.includes("->") || line.startsWith("✗")) && curPoint) {
+      parseMistakeLine(line, curPoint, lineNo, errors);
+      continue;
+    }
+    if (mode === "steps" && /^B\d+\s*\|/i.test(line)) {
+      parseStepLine(line, curPoint ? curPoint.steps : data.intro.steps, lineNo, errors);
+      continue;
+    }
+
+    if (colonIdx !== -1) {
+      const rawLabel = line.slice(0, colonIdx).trim();
+      const val = line.slice(colonIdx + 1).trim();
+      const nl = normLabel(rawLabel);
+
+      if (nl.startsWith("tiêu đề")) {
+        const b = splitBilingual(val);
+        data.lesson.titleVi = b.vi;
+        data.lesson.titleEn = b.en;
+        continue;
+      }
+      if (nl.startsWith("chủ điểm từ vựng")) { data.lesson.vocabTopic = val; continue; }
+      if (nl.startsWith("mục tiêu")) { data.lesson.goal = val; continue; }
+      if (nl.startsWith("thành phần tô màu")) {
+        const parts = val.split("|").map(x => x.trim()).filter(Boolean);
+        parts.forEach((p, idx) => {
+          const eq = p.indexOf("=");
+          if (eq === -1) {
+            errors.push(`Dòng ${lineNo}: Mục "${p}" trong Thành phần tô màu thiếu dấu "=".`);
+            return;
+          }
+          const tag = p.slice(0, eq).trim().toUpperCase();
+          const label = p.slice(eq + 1).trim();
+          if (tag === "T" || tag === "B") {
+            data.lesson.roleMap[tag] = { tag, label, cls: "cb", inLegend: false };
+          } else {
+            const cls = "c" + Math.min(idx, 3);
+            const item = { tag, label, cls, inLegend: true };
+            data.lesson.legend.push(item);
+            data.lesson.roleMap[tag] = item;
+          }
+        });
+        data.lesson.roleMap["T"] = data.lesson.roleMap["T"] || { tag: "T", label: "", cls: "t", inLegend: false };
+        data.lesson.roleMap["B"] = data.lesson.roleMap["B"] || { tag: "B", label: "", cls: "cb", inLegend: false };
+        continue;
+      }
+      if (nl.startsWith("là gì dùng khi nào")) { data.intro.whatWhen = val; continue; }
+      if (nl.startsWith("câu hỏi gợi suy nghĩ")) { data.intro.thinkQ = val; continue; }
+      if (nl.startsWith("ý chính cần chốt")) { data.intro.mainPoint = val; continue; }
+
+      if (curPoint) {
+        if (nl.startsWith("tên")) {
+          const b = splitBilingual(val);
+          curPoint.nameVi = b.vi;
+          curPoint.nameEn = b.en;
+          continue;
+        }
+        if (nl.startsWith("công thức khẳng định")) { curPoint.formulas.push({ label: "Công thức khẳng định", val }); continue; }
+        if (nl.startsWith("công thức phủ định")) { curPoint.formulas.push({ label: "Công thức phủ định", val }); continue; }
+        if (nl.startsWith("công thức nghi vấn")) { curPoint.formulas.push({ label: "Công thức nghi vấn", val }); continue; }
+        if (nl.startsWith("công thức gốc")) { curPoint.formulas.push({ label: "Công thức gốc", val }); continue; }
+        if (nl.startsWith("công thức đích")) { curPoint.formulas.push({ label: "Công thức đích", val }); continue; }
+        if (nl.startsWith("cách dùng")) { curPoint.usage = val; continue; }
+        if (nl.startsWith("dấu hiệu nhận biết")) {
+          curPoint.signals = val.split(",").map(s => s.trim()).filter(Boolean);
+          continue;
+        }
+        if (nl.startsWith("quy tắc vàng")) {
+          const enMatch = val.match(/EN\s*:\s*(.+?)\s*\|\s*VI\s*:\s*(.+)/i);
+          if (enMatch) {
+            curPoint.goldenRule = { en: enMatch[1].trim(), vi: enMatch[2].trim() };
+          } else {
+            const b = splitBilingual(val);
+            curPoint.goldenRule = { en: b.en.replace(/^EN:\s*/i,""), vi: b.vi.replace(/^VI:\s*/i,"") };
+          }
+          continue;
+        }
+        if (nl.startsWith("ghi chú")) { curPoint.note = val; continue; }
+      }
+      if (section === "REVIEW" && nl.startsWith("ghi chú")) {
+        data.review.note = val;
+        continue;
+      }
+    }
+
+    errors.push(`Dòng ${lineNo}: Không nhận diện được cú pháp "${line.slice(0, 60)}".`);
+  }
+
+  flushQuestion();
+
+  data.points.forEach(pt => {
+    pt.exampleList = Object.keys(pt.examples)
+      .sort((a, b) => (+a) - (+b))
+      .map(k => pt.examples[k]);
+  });
+
+  return { data, errors };
+}
+
+function parseChunks(str, lineNo, errors) {
+  const chunks = [];
+  const re = /\[\s*([A-Za-z0-9_]+)\s*:\s*([^\]]+?)\s*\]/g;
+  let m;
+  while ((m = re.exec(str)) !== null) {
+    chunks.push({ tag: m[1].toUpperCase(), raw: m[2].trim() });
+  }
+  if (!chunks.length) {
+    errors.push(`Dòng ${lineNo}: Không tìm thấy cụm [TAG: text] hợp lệ.`);
+  }
+  return chunks;
+}
+
+function parseVocabLine(line, pt, lineNo, errors) {
+  const parts = line.split("|").map(s => s.trim());
+  if (parts.length < 4) {
+    errors.push(`Dòng ${lineNo}: Mục từ vựng thiếu trường (cần đủ: word | pos | /IPA/ | nghĩa).`);
+    return;
+  }
+  pt.vocab.push({ word: parts[0], pos: parts[1], ipa: parts[2], vi: parts[3] });
+}
+
+function parseMistakeLine(line, pt, lineNo, errors) {
+  const barIdx = line.indexOf("|");
+  if (barIdx === -1) {
+    errors.push(`Dòng ${lineNo}: Mục lỗi thường gặp thiếu dấu "|".`);
+    return;
+  }
+  const left = line.slice(0, barIdx).trim();
+  const reason = line.slice(barIdx + 1).trim();
+  const arrowParts = left.split(/→|->/);
+  if (arrowParts.length < 2) {
+    errors.push(`Dòng ${lineNo}: Mục lỗi thường gặp thiếu mũi tên "→".`);
+    return;
+  }
+  const wrong = arrowParts[0].replace(/^[✗✘xX]\s*/, "").trim();
+  const right = arrowParts[1].replace(/^[✓✔]\s*/, "").trim();
+  pt.mistakes.push({ wrong, right, reason });
+}
+
+function parseStepLine(line, targetArr, lineNo, errors) {
+  const parts = line.split("|").map(s => s.trim());
+  if (parts.length < 4) {
+    errors.push(`Dòng ${lineNo}: Dòng bước chuyển thiếu trường.`);
+    return;
+  }
+  const viPart = parts[1].replace(/^VI\s*:\s*/i, "").trim();
+  const enPart = parts[2].replace(/^EN\s*:\s*/i, "").trim();
+  const ordPart = parts[3].replace(/^thứ tự\s*:\s*/i, "").trim().split(/\s+/);
+  targetArr.push({ id: parts[0], vi: viPart, en: enPart, order: ordPart });
+}
+
+/* =====================  KHỞI TẠO DỮ LIỆU & HÀM HIỂN THỊ  ===================== */
+const rawDataEl = document.getElementById("lesson-data");
+const parsed = parseLessonData(rawDataEl ? rawDataEl.textContent : "");
+const D = parsed.data;
+const PARSE_ERRORS = parsed.errors;
+
+const STORAGE_KEY = "lesson-" + slugify(D.lesson.titleVi || D.lesson.titleEn);
+document.title = D.lesson.titleVi + (D.lesson.titleEn ? " · " + D.lesson.titleEn : "");
+$("#hdr-ttl").textContent = "📘 " + D.lesson.titleVi;
+
+function roleInfo(tag) {
+  const t = String(tag || "").toUpperCase();
+  return D.lesson.roleMap[t] || { tag: t, label: "", cls: "cb", inLegend: false };
+}
+
+function renderLegend() {
+  if (!D.lesson.legend.length) return "";
+  return `<div class="leg">` +
+    D.lesson.legend.map(it => `<span class="chip ${it.cls}">${esc(it.tag)} = ${esc(it.label)}</span>`).join("") +
+    `</div>`;
+}
+
+function formatChunkInner(raw, isFirst, isLast, needsStop) {
+  let s = raw;
+  if (isFirst) {
+    s = s.replace(/^(\{?)([a-zA-Z])/, (_, br, ch) => br + ch.toUpperCase());
+  }
+  if (isLast && needsStop) {
+    s = s + ".";
+  }
+  return esc(s).replace(/\{(.+?)\}/g, "<u>$1</u>");
+}
+
+function chunksPlainSentence(chunks) {
+  if (!chunks || !chunks.length) return "";
+  const joined = chunks.map(c => c.raw.replace(/\{(.+?)\}/g, "$1")).join(" ").replace(/\s+/g, " ").trim();
+  const capped = cap(joined);
+  return /[.?!]$/.test(capped) ? capped : capped + ".";
+}
+
+function renderChunkSentence(chunks) {
+  if (!chunks || !chunks.length) return "";
+  const fullPlain = chunks.map(c => c.raw.replace(/\{(.+?)\}/g, "$1")).join(" ").trim();
+  const needsStop = !/[.?!]$/.test(fullPlain);
+  const parts = chunks.map((c, i) => {
+    const info = roleInfo(c.tag);
+    const inner = formatChunkInner(c.raw, i === 0, i === chunks.length - 1, needsStop);
+    if (c.tag === "T" || c.tag === "B") {
+      return `<span>${inner}</span>`;
+    }
+    return `<b class="${info.cls}">${inner}</b>`;
+  });
+  return `${parts.join(" ")}${sp(chunksPlainSentence(chunks))}`;
+}
+
+function renderPair(ex) {
+  if (!ex) return "";
+  let enHtml = "";
+  if (ex.origChunks && ex.destChunks) {
+    enHtml = `<p>${renderChunkSentence(ex.origChunks)}</p><p>➜${renderChunkSentence(ex.destChunks)}</p>`;
+  } else if (ex.chunks) {
+    enHtml = `<p>${renderChunkSentence(ex.chunks)}</p>`;
+  }
+  return `<div class="pair"><div class="en">${enHtml}</div>${ex.vi ? vi(ex.vi) : ""}</div>`;
+}
+
+function classifyFormulaToken(tok) {
+  const clean = tok.replace(/[?,!]+$/, "").trim();
+  if (!clean) return "cb";
+  if (clean.startsWith("(") || clean.endsWith(")")) return "cb";
+  if (clean === "S") return roleInfo("S").cls;
+  if (/^O\b/i.test(clean)) return roleInfo("O").cls;
+  if (D.lesson.roleMap[clean] && D.lesson.roleMap[clean].inLegend) {
+    return D.lesson.roleMap[clean].cls;
+  }
+  const auxPat = "(am|is|are|do|does|did|have|has|had|not|will|would|was|were|been|being|be|don't|doesn't|didn't|isn't|aren't|wasn't|weren't|hasn't|haven't|hadn't|won't)";
+  const isAux = new RegExp(`^${auxPat}(\\/${auxPat})*$`, "i").test(clean);
+  if (isAux) {
+    return D.lesson.roleMap["AUX"] ? roleInfo("AUX").cls : roleInfo("V").cls;
+  }
+  if (/\bV|V\(|V-|V\d/i.test(clean)) {
+    return roleInfo("V").cls;
+  }
+  return "cb";
+}
+
+function renderFormula(fStr, labelVi) {
+  if (!fStr) return "";
+  const tokens = fStr.split(" + ").map(t => t.trim()).filter(Boolean);
+  const chips = tokens.map(t => `<span class="chip ${classifyFormulaToken(t)}">${esc(t)}</span>`).join(" + ");
+  return `${labelVi ? `<p style="margin:.4rem 0 .15rem;font-size:.88rem;color:var(--mut);font-weight:600">${esc(labelVi)}:</p>` : ""}<div class="fm en">${chips}</div>`;
+}
+
+function renderSignals(signals) {
+  if (!signals || !signals.length) return "";
+  return `<div class="fm">` + signals.map(s => `<span class="chip cb en">${esc(s)}</span>`).join("") + `</div>`;
+}
+
+function generateGuessText(pt) {
+  const items = [];
+  (pt.exampleList || []).forEach((ex, i) => {
+    const chs = ex.destChunks || ex.chunks || [];
+    const subjs = chs.filter(c => c.tag === "S").map(c => c.raw.replace(/[{}]/g, ""));
+    const hls = [];
+    chs.forEach(c => {
+      const m = c.raw.match(/\{(.+?)\}/g);
+      if (m) m.forEach(x => hls.push(x.replace(/[{}]/g, "")));
+    });
+    if (hls.length) {
+      items.push(`Ví dụ ${i + 1}:${subjs.length ? `<b class="${roleInfo("S").cls} en">${esc(subjs.join(" / "))}</b> ➜ ` : ""}<span class="en"><u>${esc(hls.join(" · "))}</u></span>`);
+    }
+  });
+  if (!items.length) {
+    return `<p>Hãy so sánh các ví dụ ở phần Quan sát và đoán quy tắc biến đổi động từ.</p>`;
+  }
+  return `<p>Hãy quan sát các từ được tô vàng ở trên (${items.join(" ; ")}). Dấu hiệu nào trong câu hoặc chủ ngữ nào đã quyết định dạng động từ đó?</p>`;
+}
+
+/* =====================  TRẠNG THÁI & BỘ ĐẾM GIỜ  ===================== */
+const HAS_CMP = !!D.compare;
+const REV_PG = 2 + D.points.length + (HAS_CMP ? 1 : 0);
+
+const TITLES = [
+  "Chào mừng",
+  "Tổng quan",
+  ...D.points.map(t => t.nameVi),
+  ...(HAS_CMP ? ["So sánh"] : []),
+  "Ôn tập tổng hợp",
+  "Bảng tổng hợp",
+  "Tổng kết"
+];
+const N = TITLES.length;
+
+let st = { t: {}, f: {}, d: {}, p: 0 }, pg = 0;
+try {
+  Object.assign(st, JSON.parse(localStorage.getItem(STORAGE_KEY) || "{}"));
+  st.t = st.t || {};
+  st.f = st.f || {};
+  st.d = st.d || {};
+} catch (e) {}
+
+const save = () => {
+  try { localStorage.setItem(STORAGE_KEY, JSON.stringify(st)); } catch (e) {}
+};
+
+const sc = (pre, n) => {
+  let c = 0, a = 0;
+  for (let i = 0; i < n; i++) {
+    const v = st.f[pre + i];
+    if (v !== undefined) { a++; if (v) c++; }
+  }
+  return [c, a];
+};
+
+const tot = () => Object.values(st.t).reduce((a, b) => a + b, 0);
+
+setInterval(() => {
+  if (document.hidden) return;
+  st.t[pg] = (st.t[pg] || 0) + 1;
+  tick();
+  if (tot() % 10 === 0) save();
+}, 1000);
+
+function tick() {
+  $("#tp").textContent = fmt(st.t[pg] || 0);
+  $("#tt").textContent = fmt(tot());
+}
+
+/* =====================  ĐỌC TIẾNG ANH + THANH ÂM THANH  ===================== */
+const SS = window.speechSynthesis;
+let rate = 1, lang = "en-US", voices = [], cur = null, tmr = null;
+
+function loadV() {
+  if (!SS) {
+    $("#vm").textContent = "⚠️ Trình duyệt không hỗ trợ âm thanh.";
+    return;
+  }
+  voices = SS.getVoices().filter(v => /^en/i.test(v.lang));
+  $("#vm").textContent = voices.length ? "" : "⚠️ Không tìm thấy giọng tiếng Anh trên thiết bị này.";
+}
+if (SS && SS.addEventListener) SS.addEventListener("voiceschanged", loadV);
+loadV();
+
+function resetUI() {
+  if (tmr) { clearInterval(tmr); tmr = null; }
+  document.querySelectorAll(".say").forEach(x => x.classList.remove("say"));
+  document.querySelectorAll(".spk").forEach(x => { x.textContent = "🔊"; x.setAttribute("aria-label", "Nghe"); });
+  $("#ab").classList.add("hid");
+  $("#apb").style.width = "0";
+}
+
+function stopSay() {
+  cur = null;
+  if (SS) SS.cancel();
+  resetUI();
+}
+
+function setAp() {
+  const p = cur && cur.paused;
+  $("#ap").textContent = p ? "▶" : "⏸";
+  $("#ap").setAttribute("aria-label", p ? "Tiếp tục" : "Tạm dừng");
+  if (cur) $("#at").textContent = (p ? "Đã tạm dừng: " : "Đang phát: ") + cur.text;
+}
+
+function say(t, btn, box) {
+  if (!SS) return;
+  if (cur && btn && cur.btn === btn) { stopSay(); return; }
+  SS.cancel();
+  resetUI();
+  const cleanText = plain(t);
+  if (!cleanText) return;
+  const id = Math.random(), u = new SpeechSynthesisUtterance(cleanText);
+  u.rate = rate;
+  u.lang = lang;
+  const v = voices.find(v => v.lang.replace("_", "-") === lang) || voices[0];
+  if (v) u.voice = v;
+  cur = { id, btn, text: cleanText, paused: false, el: 0, bp: 0 };
+  if (box) box.classList.add("say");
+  if (btn && btn.classList.contains("spk")) {
+    btn.textContent = "⏹";
+    btn.setAttribute("aria-label", "Dừng");
+  }
+  $("#ab").classList.remove("hid");
+  $("#apb").style.width = "0";
+  setAp();
+  u.onboundary = e => {
+    if (cur && cur.id === id && e.charIndex) cur.bp = Math.max(cur.bp, e.charIndex / cleanText.length);
+  };
+  const end = () => {
+    if (cur && cur.id === id) {
+      $("#apb").style.width = "100%";
+      cur = null;
+      setTimeout(() => { if (!cur) resetUI(); }, 250);
+    }
+  };
+  u.onend = end;
+  u.onerror = end;
+  tmr = setInterval(() => {
+    if (!cur || cur.paused) return;
+    cur.el += 200;
+    const est = Math.max(1200, cleanText.length * 75 / rate);
+    const p = cur.bp > 0 ? cur.bp : Math.min(0.95, cur.el / est);
+    $("#apb").style.width = Math.round(p * 100) + "%";
+  }, 200);
+  SS.speak(u);
+}
+
+$("#ap").onclick = () => {
+  if (!cur || !SS) return;
+  if (cur.paused) { SS.resume(); cur.paused = false; }
+  else { SS.pause(); cur.paused = true; }
+  setAp();
+};
+$("#as").onclick = stopSay;
+
+function wordAt(x, y) {
+  let n, o, r;
+  if (document.caretRangeFromPoint) {
+    r = document.caretRangeFromPoint(x, y);
+    if (r) { n = r.startContainer; o = r.startOffset; }
+  } else if (document.caretPositionFromPoint) {
+    r = document.caretPositionFromPoint(x, y);
+    if (r) { n = r.offsetNode; o = r.offset; }
+  }
+  if (!n || n.nodeType !== 3) return "";
+  const s = n.textContent, re = /[A-Za-z'’-]/;
+  let a = o, b = o;
+  while (a > 0 && re.test(s[a - 1])) a--;
+  while (b < s.length && re.test(s[b])) b++;
+  return s.slice(a, b);
+}
+
+/* =====================  HOẠT ẢNH GHÉP CÂU / CHUYỂN ĐỔI  ===================== */
+const RM = matchMedia("(prefers-reduced-motion: reduce)").matches;
+let A = null;
+
+function animHTML(ptIdx) {
+  const pt = D.points[ptIdx];
+  const exList = pt ? (pt.exampleList || []) : [];
+  const hasRewrite = pt && ((pt.steps && pt.steps.length) || (D.intro.steps && D.intro.steps.length && exList[0] && exList[0].origChunks && exList[0].destChunks));
+  const titleVi = hasRewrite ? "3 · Xem câu thay đổi 🎬" : "3 · Xem câu được ghép 🎬";
+  const tabs = exList.length > 1
+    ? `<div class="ctl" style="margin-bottom:.5rem">` +
+      exList.map((_, i) => `<button data-a="anim-ex" data-ex="${i}" class="ex-tab ${i === 0 ? "soft" : ""}">Ví dụ ${i + 1}</button>`).join("") +
+      `</div>`
+    : "";
+  return `<div class="card">
+    <h3>${titleVi}</h3>
+    ${tabs}${renderLegend()}
+    <div id="stage" class="stage en" aria-live="polite"></div>
+    <p id="cap" style="margin:.2rem 0;font-weight:600"></p>
+    <p id="capv" class="capen"></p>
+    <div id="fin" class="en"></div>
+    <div class="ctl">
+      <button data-a="play" class="pri" aria-label="Chạy">▶ Chạy</button>
+      <button data-a="pause" aria-label="Tạm dừng">⏸ Tạm dừng</button>
+      <button data-a="replay" aria-label="Chạy lại">↺ Chạy lại</button>
+      <button data-a="next" aria-label="Bước tiếp theo">⏭ Bước tiếp</button>
+    </div>
+  </div>`;
+}
+
+function anim(ptIdx, exIdx = 0) {
+  stopA();
+  const pt = D.points[ptIdx];
+  if (!pt || !pt.exampleList || !pt.exampleList[exIdx]) return;
+  const ex = pt.exampleList[exIdx];
+  const steps = (pt.steps && pt.steps.length) ? pt.steps : (D.intro.steps && D.intro.steps.length && ex.origChunks && ex.destChunks ? D.intro.steps : null);
+
+  document.querySelectorAll(".ex-tab").forEach((b, i) => {
+    b.classList.toggle("soft", i === exIdx);
+  });
+
+  const g = $("#stage");
+  if (!g) return;
+  g.innerHTML = "";
+
+  if (steps && ex.origChunks && ex.destChunks) {
+    A = { mode: "rewrite", ptIdx, exIdx, ex, steps, s: 0, maxS: steps.length - 1, tm: null, els: {} };
+    const allTags = new Set();
+    steps.forEach(s => s.order.forEach(k => allTags.add(k)));
+    allTags.forEach(k => {
+      const info = roleInfo(k);
+      const c = document.createElement("span");
+      c.className = "chip " + info.cls;
+      A.els[k] = c;
+      g.appendChild(c);
+    });
+    show(0, true);
+  } else {
+    const chunks = ex.chunks || ex.destChunks || [];
+    A = { mode: "build", ptIdx, exIdx, ex, chunks, s: 0, maxS: Math.max(0, chunks.length - 1), tm: null };
+    show(0, true);
+  }
+}
+
+function show(n, quiet) {
+  if (!A) return;
+  const stage = $("#stage");
+  if (!stage) return;
+  A.s = Math.max(0, Math.min(A.maxS, n));
+
+  if (A.mode === "rewrite") {
+    const stepObj = A.steps[A.s];
+    const o = stepObj.order;
+    const E = A.els;
+    const pre = {};
+    if (!quiet && !RM) {
+      for (const k in E) pre[k] = E[k].getBoundingClientRect();
+    }
+    const useDest = A.s >= Math.floor(A.steps.length / 2);
+    const srcChunks = useDest ? A.ex.destChunks : A.ex.origChunks;
+    const tx = {};
+    (A.ex.origChunks || []).forEach(c => { tx[c.tag] = c.raw; });
+    (srcChunks || []).forEach(c => { tx[c.tag] = c.raw; });
+
+    for (const k in E) E[k].style.display = o.includes(k) ? "" : "none";
+    o.forEach((k, i) => {
+      if (!E[k]) return;
+      const raw = tx[k] || k;
+      const info = roleInfo(k);
+      const inner = formatChunkInner(raw, i === 0, i === o.length - 1, false);
+      const sub = info.inLegend && info.label ? `<small>${esc(info.label)}</small>` : "";
+      E[k].innerHTML = `<span>${inner}</span>${sub}`;
+      stage.appendChild(E[k]);
+    });
+    if (!quiet && !RM) {
+      o.forEach(k => {
+        const p = pre[k];
+        if (!p || !p.width || !E[k]) return;
+        const r = E[k].getBoundingClientRect(), dx = p.left - r.left, dy = p.top - r.top;
+        if (dx || dy) {
+          const c = E[k];
+          c.style.transition = "none";
+          c.style.transform = `translate(${dx}px,${dy}px)`;
+          c.getBoundingClientRect();
+          c.style.transition = "transform .7s ease";
+          c.style.transform = "";
+        }
+      });
+    }
+    $("#cap").textContent = stepObj.vi;
+    $("#capv").textContent = stepObj.en;
+    $("#fin").innerHTML = A.s === A.maxS ? `<p>✅ ${renderChunkSentence(A.ex.destChunks)}</p>${A.ex.vi ? vi(A.ex.vi) : ""}` : "";
+  } else {
+    const chunks = A.chunks;
+    if (!chunks.length) return;
+    const fullPlain = chunks.map(c => c.raw.replace(/\{(.+?)\}/g, "$1")).join(" ").trim();
+    const needsStop = !/[.?!]$/.test(fullPlain);
+
+    stage.innerHTML = "";
+    for (let i = 0; i <= A.s; i++) {
+      const ch = chunks[i];
+      const info = roleInfo(ch.tag);
+      const chip = document.createElement("span");
+      chip.className = "chip " + (ch.tag === "T" ? "cb" : info.cls);
+      const inner = formatChunkInner(ch.raw, i === 0, i === chunks.length - 1, needsStop);
+      const sub = (ch.tag !== "T" && ch.tag !== "B" && info.inLegend && info.label) ? `<small>${esc(info.label)}</small>` : "";
+      chip.innerHTML = `<span>${inner}</span>${sub}`;
+      stage.appendChild(chip);
+    }
+
+    const curChunk = chunks[A.s];
+    const curInfo = roleInfo(curChunk.tag);
+    const cleanTxt = curChunk.raw.replace(/\{(.+?)\}/g, "$1");
+    const roleLabel = (curChunk.tag !== "T" && curChunk.tag !== "B" && curInfo.label)
+      ? `${curInfo.label} (${curChunk.tag})`
+      : "Thành phần câu";
+    $("#cap").textContent = `Bước ${A.s + 1}: ${roleLabel} — "${cleanTxt}"`;
+    $("#capv").textContent = A.s === A.maxS ? "Hoàn thành câu!" : "Nhấn Chạy hoặc Bước tiếp để xem thành phần tiếp theo.";
+    $("#fin").innerHTML = A.s === A.maxS
+      ? `<p>✅ Câu hoàn chỉnh: ${renderChunkSentence(chunks)}</p>${A.ex.vi ? vi(A.ex.vi) : ""}`
+      : "";
+  }
+}
+
+function stopA() {
+  if (A && A.tm) { clearInterval(A.tm); A.tm = null; }
+}
+
+function play() {
+  if (!A) return;
+  if (RM) {
+    if (A.s < A.maxS) show(A.s + 1);
+    return;
+  }
+  stopA();
+  if (A.s >= A.maxS) show(0, true);
+  A.tm = setInterval(() => {
+    if (!A || A.s >= A.maxS) return stopA();
+    show(A.s + 1);
+  }, 1600);
+}
+
+/* =====================  TRẠM TRỰC QUAN SO SÁNH (##COMPARE LAB)  ===================== */
+let cmpIdx = 0;
+let cmpAutoTmr = null;
+
+function stopCmpAuto() {
+  if (cmpAutoTmr) { clearInterval(cmpAutoTmr); cmpAutoTmr = null; }
+  const btn = $("#cmp-auto-btn");
+  if (btn) btn.textContent = "▶ Tự động chuyển 3 thì";
+}
+
+function detectTimelineType(item, idx) {
+  if (item && item.tlType) return item.tlType;
+  const combined = ((item ? item.nameEn : "") + " " + (item ? item.nameVi : "")).toLowerCase();
+  const isPast = /past|quá khứ/.test(combined);
+  if (isPast) {
+    if (/continuous|progressive|tiếp diễn/.test(combined)) return "past-now";
+    if (/perfect|hoàn thành/.test(combined)) return "past-bridge";
+    return "past-point";
+  }
+  if (/continuous|progressive|tiếp diễn/.test(combined)) return "now";
+  if (/perfect|hoàn thành/.test(combined)) return "bridge";
+  if (/simple|đơn/.test(combined)) return "repeat";
+  return ["repeat", "now", "bridge"][idx % 3];
+}
+
+function renderTimelineSVG(type) {
+  // Nhánh 1: Trục thời gian cho CÁC THÌ QUÁ KHỨ (TRƯỚC ĐÓ -> LÚC ĐÓ (QUÁ KHỨ) -> BÂY GIỜ)
+  if (type.startsWith("past-")) {
+    const pastAxis = `
+      <!-- Trục ngang chính -->
+      <line x1="28" y1="68" x2="432" y2="68" stroke="#cbd5e1" stroke-width="4" stroke-linecap="round"/>
+      <polygon points="438,68 426,62 426,74" fill="#94a3b8"/>
+      <!-- Vạch mốc: Trước đó (85) - Lúc đó (225) - Bây giờ (380) -->
+      <line x1="85" y1="56" x2="85" y2="80" stroke="#94a3b8" stroke-width="2.5" stroke-linecap="round"/>
+      <line x1="225" y1="46" x2="225" y2="90" stroke="#2f5d8a" stroke-width="3" stroke-dasharray="4 3" stroke-linecap="round"/>
+      <line x1="380" y1="52" x2="380" y2="84" stroke="#64748b" stroke-width="3" stroke-linecap="round"/>
+      <!-- Nhãn trục -->
+      <text x="85" y="108" text-anchor="middle" fill="#5a6b7d" font-size="11.5" font-weight="600">TRƯỚC ĐÓ</text>
+      <text x="225" y="110" text-anchor="middle" fill="#1b4fc4" font-size="12.5" font-weight="700">LÚC ĐÓ (QUÁ KHỨ)</text>
+      <text x="380" y="108" text-anchor="middle" fill="#475569" font-size="12" font-weight="700">BÂY GIỜ</text>
+    `;
+
+    if (type === "past-point") {
+      return `<svg class="tl-svg" viewBox="0 0 460 122" role="img" aria-label="Quá khứ đơn: Việc đã xảy ra và kết thúc hẳn tại một mốc quá khứ">
+        ${pastAxis}
+        <!-- Vạch ngắt liên hệ với Bây giờ -->
+        <line x1="305" y1="54" x2="305" y2="82" stroke="#d62839" stroke-width="2.5" stroke-dasharray="3 3"/>
+        <text x="305" y="47" text-anchor="middle" fill="#d62839" font-size="10.5" font-weight="700">✕ Đã khép lại</text>
+        <!-- Điểm quá khứ đơn tại mốc LÚC ĐÓ -->
+        <circle class="tl-rep-dot" cx="225" cy="68" r="12" fill="#2f6fed" stroke="#fff" stroke-width="3"/>
+        <circle cx="380" cy="68" r="6" fill="#cbd5e1"/>
+        <rect x="105" y="6" width="240" height="24" rx="12" fill="#e7efff" stroke="#2f6fed" stroke-width="1.5"/>
+        <text x="225" y="22" text-anchor="middle" fill="#1b4fc4" font-size="11.5" font-weight="700">✓ Đã xảy ra &amp; xong hẳn ở quá khứ</text>
+      </svg>`;
+    }
+
+    if (type === "past-now") {
+      return `<svg class="tl-svg" viewBox="0 0 460 122" role="img" aria-label="Quá khứ tiếp diễn: Việc đang diễn ra ngay quanh mốc Lúc đó trong quá khứ">
+        ${pastAxis}
+        <circle class="tl-radar-1" cx="225" cy="68" r="14" fill="none" stroke="#e8590c"/>
+        <circle class="tl-radar-2" cx="225" cy="68" r="14" fill="none" stroke="#e8590c"/>
+        <circle cx="225" cy="68" r="12" fill="#e8590c" stroke="#fff" stroke-width="3"/>
+        <circle cx="380" cy="68" r="6" fill="#cbd5e1"/>
+        <rect x="105" y="6" width="240" height="24" rx="12" fill="#fff0e6" stroke="#e8590c" stroke-width="1.5"/>
+        <text x="225" y="22" text-anchor="middle" fill="#b84305" font-size="11.5" font-weight="700">📸 Đang diễn ra ngay tại mốc "LÚC ĐÓ"</text>
+      </svg>`;
+    }
+
+    // "past-bridge" (Past Perfect: Earlier Past -> Past Reference Point)
+    return `<svg class="tl-svg" viewBox="0 0 460 122" role="img" aria-label="Quá khứ hoàn thành: Việc đã xảy ra và hoàn tất trước mốc Lúc đó trong quá khứ">
+      ${pastAxis}
+      <!-- Nền vùng Trước đó -> Lúc đó -->
+      <rect x="85" y="54" width="140" height="28" rx="14" fill="#e5f6ea" opacity="0.88"/>
+      <!-- Đường mũi tên chạy từ Trước đó (85) tới trước Lúc đó (217) -->
+      <line class="tl-bridge-line" x1="85" y1="68" x2="217" y2="68" stroke="#2b9348" stroke-width="7" stroke-linecap="round"/>
+      <circle class="tl-bridge-end" cx="85" cy="68" r="10" fill="#2b9348" stroke="#ffe066" stroke-width="3"/>
+      <circle cx="225" cy="68" r="9" fill="#2f6fed" stroke="#fff" stroke-width="2.5"/>
+      <circle cx="380" cy="68" r="6" fill="#cbd5e1"/>
+      <rect x="65" y="6" width="250" height="24" rx="12" fill="#e5f6ea" stroke="#2b9348" stroke-width="1.5"/>
+      <text x="190" y="22" text-anchor="middle" fill="#1f7a3a" font-size="11.5" font-weight="700">⏪ Xảy ra &amp; xong TRƯỚC mốc "LÚC ĐÓ"</text>
+    </svg>`;
+  }
+
+  // Nhánh 2: Trục thời gian cho CÁC THÌ HIỆN TẠI (QUÁ KHỨ -> BÂY GIỜ -> TƯƠNG LAI)
+  const baseAxis = `
+    <line x1="28" y1="68" x2="432" y2="68" stroke="#cbd5e1" stroke-width="4" stroke-linecap="round"/>
+    <polygon points="438,68 426,62 426,74" fill="#94a3b8"/>
+    <line x1="90" y1="58" x2="90" y2="78" stroke="#94a3b8" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="230" y1="46" x2="230" y2="90" stroke="#2f5d8a" stroke-width="3" stroke-dasharray="4 3" stroke-linecap="round"/>
+    <line x1="370" y1="58" x2="370" y2="78" stroke="#94a3b8" stroke-width="2.5" stroke-linecap="round"/>
+    <text x="90" y="108" text-anchor="middle" fill="#5a6b7d" font-size="12" font-weight="600">QUÁ KHỨ</text>
+    <text x="230" y="110" text-anchor="middle" fill="#1b4fc4" font-size="13" font-weight="700">BÂY GIỜ (NOW)</text>
+    <text x="370" y="108" text-anchor="middle" fill="#5a6b7d" font-size="12" font-weight="600">TƯƠNG LAI</text>
+  `;
+
+  if (type === "repeat") {
+    const xs = [60, 115, 172, 230, 288, 345, 400];
+    const dots = xs.map((x, i) => `
+      <circle class="tl-rep-dot" cx="${x}" cy="68" r="${x === 230 ? 9 : 7}"
+        fill="${x === 230 ? "#e8590c" : "#2f6fed"}"
+        style="animation-delay:${(i * 0.22).toFixed(2)}s"/>
+    `).join("");
+    const arcs = [0, 1, 2, 3, 4, 5].map(i => {
+      const x1 = xs[i], x2 = xs[i + 1], xm = (x1 + x2) / 2;
+      return `<path d="M ${x1 + 4} 58 Q ${xm} 36${x2 - 4} 58" fill="none" stroke="#93c5fd" stroke-width="2" stroke-dasharray="3 2"/>`;
+    }).join("");
+    return `<svg class="tl-svg" viewBox="0 0 460 122" role="img" aria-label="Trục thời gian lặp lại qua quá khứ, bây giờ và tương lai">
+      ${baseAxis}${arcs}${dots}
+      <rect x="135" y="6" width="190" height="24" rx="12" fill="#e7efff" stroke="#2f6fed" stroke-width="1.5"/>
+      <text x="230" y="22" text-anchor="middle" fill="#1b4fc4" font-size="11.5" font-weight="700">↻ Lặp đi lặp lại / Luôn đúng</text>
+    </svg>`;
+  }
+
+  if (type === "now") {
+    return `<svg class="tl-svg" viewBox="0 0 460 122" role="img" aria-label="Trục thời gian đang diễn ra ngay tại điểm bây giờ">
+      ${baseAxis}
+      <circle class="tl-radar-1" cx="230" cy="68" r="14" fill="none" stroke="#e8590c"/>
+      <circle class="tl-radar-2" cx="230" cy="68" r="14" fill="none" stroke="#e8590c"/>
+      <circle cx="230" cy="68" r="12" fill="#e8590c" stroke="#fff" stroke-width="3"/>
+      <rect x="140" y="6" width="180" height="24" rx="12" fill="#fff0e6" stroke="#e8590c" stroke-width="1.5"/>
+      <text x="230" y="22" text-anchor="middle" fill="#b84305" font-size="11.5" font-weight="700">📸 Đang diễn ra ngay lúc này!</text>
+    </svg>`;
+  }
+
+  return `<svg class="tl-svg" viewBox="0 0 460 122" role="img" aria-label="Trục thời gian nối từ quá khứ đến bây giờ">
+    ${baseAxis}
+    <rect x="90" y="54" width="140" height="28" rx="14" fill="#e5f6ea" opacity="0.85"/>
+    <line class="tl-bridge-line" x1="90" y1="68" x2="222" y2="68" stroke="#2b9348" stroke-width="7" stroke-linecap="round"/>
+    <circle cx="90" cy="68" r="8" fill="#2b9348" stroke="#fff" stroke-width="2"/>
+    <circle class="tl-bridge-end" cx="230" cy="68" r="11" fill="#2b9348" stroke="#ffe066" stroke-width="3.5"/>
+    <rect x="75" y="6" width="230" height="24" rx="12" fill="#e5f6ea" stroke="#2b9348" stroke-width="1.5"/>
+    <text x="190" y="22" text-anchor="middle" fill="#1f7a3a" font-size="11.5" font-weight="700">🔗 Bắt đầu ở quá khứ ➜ Còn liên quan bây giờ</text>
+  </svg>`;
+}
+
+function renderMorphSentenceHTML(ex, prevEx) {
+  if (!ex || !ex.chunks) return "";
+  const chunks = ex.chunks;
+  const prevChunks = prevEx && prevEx.chunks ? prevEx.chunks : null;
+  const fullPlain = chunks.map(c => c.raw.replace(/\{(.+?)\}/g, "$1")).join(" ").trim();
+  const needsStop = !/[.?!]$/.test(fullPlain);
+
+  const chipsHtml = chunks.map((ch, i) => {
+    const info = roleInfo(ch.tag);
+    const inner = formatChunkInner(ch.raw, i === 0, i === chunks.length - 1, needsStop);
+    const sub = (ch.tag !== "T" && ch.tag !== "B" && info.inLegend && info.label) ? `<small>${esc(info.label)}</small>` : "";
+    const hasBrace = /\{.+?\}/.test(ch.raw);
+    const prevSame = prevChunks && prevChunks.some(p => p.tag === ch.tag && p.raw === ch.raw);
+    const changedClass = (hasBrace || (prevChunks && !prevSame)) ? "changed" : "";
+    const chipCls = ch.tag === "T" ? "cb" : info.cls;
+    return `<span class="chip ${chipCls} morph-chip${changedClass}"><span>${inner}</span>${sub}</span>`;
+  }).join("");
+
+  return `
+    <div class="row" style="margin-bottom:.35rem">
+      <span style="font-size:.84rem;font-weight:700;color:var(--pri)">🔄 ${esc(ex.label)}</span>${sp(chunksPlainSentence(chunks))}
+    </div>
+    <div class="morph-chunks en">${chipsHtml}</div>${ex.vi ? `<div style="margin-top:.45rem">${vi(ex.vi)}</div>` : ""}
+  `;
+}
+
+function updateCompareLab(newIdx, speakNow = false) {
+  const C = D.compare;
+  if (!C || !C.items || !C.items.length) return;
+  const prevIdx = cmpIdx;
+  cmpIdx = Math.max(0, Math.min(C.items.length - 1, newIdx));
+
+  const item = C.items[cmpIdx];
+  const ex = C.examples && C.examples[cmpIdx] ? C.examples[cmpIdx] : (C.examples ? C.examples[0] : null);
+  const prevEx = C.examples && C.examples[prevIdx] ? C.examples[prevIdx] : null;
+  const tlType = detectTimelineType(item, cmpIdx);
+
+  document.querySelectorAll(".dbranch-btn").forEach((b, i) => b.classList.toggle("active", i === cmpIdx));
+  document.querySelectorAll(".cmp-tab").forEach((b, i) => b.classList.toggle("active", i === cmpIdx));
+  document.querySelectorAll(".cmp-side-row").forEach((r, i) => r.classList.toggle("active", i === cmpIdx));
+
+  const tlWrap = $("#cmp-tl-wrap");
+  if (tlWrap) {
+    tlWrap.innerHTML = `
+      ${renderTimelineSVG(tlType)}
+      <div style="font-size:.93rem;font-weight:600;color:var(--ink);margin-top:.2rem">⏳ ${esc(item.timeline)}</div>${item.selfQ ? `<div style="font-size:.86rem;color:var(--mut);margin-top:.15rem">🤔 Tự hỏi: <i>"${esc(item.selfQ)}"</i></div>` : ""}
+    `;
+  }
+
+  const morphWrap = $("#cmp-morph-wrap");
+  if (morphWrap && ex) {
+    morphWrap.innerHTML = renderMorphSentenceHTML(ex, prevIdx !== cmpIdx ? prevEx : null);
+  }
+
+  const metaWrap = $("#cmp-meta-wrap");
+  if (metaWrap) {
+    metaWrap.innerHTML = `
+      <div class="cmp-info-item">
+        <div style="font-size:.82rem;color:var(--mut);font-weight:700">📐 HÌNH THỨC (${esc(item.nameVi.toUpperCase())})</div>${renderFormula(item.form, "")}
+      </div>
+      <div class="cmp-info-item">
+        <div style="font-size:.82rem;color:var(--mut);font-weight:700">🔍 DẤU HIỆU NHẬN BIẾT</div>
+        ${renderSignals(item.signals)}
+      </div>
+    `;
+  }
+
+  if (speakNow && ex) {
+    say(chunksPlainSentence(ex.chunks), null, null);
+  }
+}
+
+/* =====================  CÁC TRANG BÀI HỌC  ===================== */
+const wel = () => `
+  <h1>Chào mừng bạn! <small>${esc(D.lesson.titleVi)}${D.lesson.titleEn ? " · " + esc(D.lesson.titleEn) : ""}</small></h1>
+  <div class="card">
+    ${D.lesson.vocabTopic ? `<p>📚 <b>Chủ điểm từ vựng:</b> ${esc(D.lesson.vocabTopic)}</p>` : ""}
+    <p>🎯 <b>Mục tiêu:</b> ${esc(D.lesson.goal)}</p>
+    <p>👆 Chạm vào <b>bất kỳ từ tiếng Anh nào</b> để nghe phát âm.<br>
+    🔊 Chạm để nghe cả câu; chạm lần nữa (⏹) để <b>dừng ngay</b>.<br>
+    🎚️ Khi đang phát, thanh âm thanh ở cuối màn hình có nút <b>⏸ tạm dừng</b> và <b>⏹ dừng hẳn</b>.<br>
+    ⏱ Đồng hồ chỉ đếm lên, không giới hạn thời gian.</p>
+    ${renderLegend()}
+  </div>
+  <div class="card">
+    <h3>Khởi động 🔥 Nhìn các câu ví dụ</h3>
+    ${D.points.map(p => p.exampleList && p.exampleList[0] ? renderPair(p.exampleList[0]) : "").join("")}
+    <p>Hãy chú ý <b>chủ ngữ</b> và <b>từ được tô vàng</b> trong mỗi câu.</p>
+  </div>
+`;
+
+const ovw = () => `
+  <h1>Tổng quan <small>Overview</small></h1>
+  <div class="card">
+    <h3>Là gì, dùng khi nào? 📖</h3>
+    <p>${esc(D.intro.whatWhen)}</p>
+  </div>
+  <div class="card">
+    <h3>Suy nghĩ 🤔</h3>
+    <p>${esc(D.intro.thinkQ)}</p>
+    <button data-a="rev" data-t="r1" class="pri">Xem ý chính ✨</button>
+  </div>
+  <div id="r1" class="card hid">
+    <p><b>📌 Ý chính cần chốt:</b></p>
+    <p>${esc(D.intro.mainPoint)}</p>
+  </div>
+`;
+
+const tp = ti => {
+  const T = D.points[ti];
+  const fmHtml = (T.formulas || []).map(f => renderFormula(f.val, f.label)).join("");
+
+  return `
+    <h1>${esc(T.nameVi)} <small>${esc(T.nameEn)}</small></h1>
+    <div class="card">
+      <h3>1 · Quan sát 👀</h3>
+      ${renderLegend()}${(T.exampleList || []).map(ex => renderPair(ex)).join("")}
+    </div>
+    <div class="card">
+      <h3>2 · Đoán quy tắc 🤔</h3>
+      ${generateGuessText(T)}
+    </div>
+    ${animHTML(ti)}
+    <div class="card">
+      <button data-a="rev" data-t="ru${ti}" class="pri">4 · Xem quy tắc ✨</button>
+      <div id="ru${ti}" class="hid" style="margin-top:.6rem">
+        ${fmHtml}${T.usage ? `<p style="margin:.5rem 0"><b>📖 Cách dùng:</b> ${esc(T.usage)}</p>` : ""}
+        ${T.signals && T.signals.length ? `<p style="margin:.5rem 0 .2rem"><b>🔍 Dấu hiệu nhận biết:</b></p>${renderSignals(T.signals)}` : ""}
+        ${T.goldenRule ? `<p style="margin:.6rem 0 .2rem">💡 <b>Quy tắc vàng:</b> ${esc(T.goldenRule.vi)}</p><p class="en" style="margin:.2rem 0"><b>${esc(T.goldenRule.en)}</b>${sp(T.goldenRule.en)}</p>` : ""}
+      </div>
+    </div>
+    <div class="card">
+      <h3>5 · Từ vựng 📚 <small>(chạm vào từ để nghe)</small></h3>
+      <div class="vg">
+        ${T.vocab.map(w => `<div><button class="vwb en" data-say="${esc(w.word)}"><b>${esc(w.word)}</b> <i>${esc(w.pos)}</i> ${esc(w.ipa)}</button>${vi(w.vi)}</div>`).join("")}
+      </div>
+    </div>
+    <div class="card">
+      <h3>6 · Lỗi thường gặp ⚠️</h3>
+      ${T.mistakes.map(m => `<div class="mis"><div class="en"><span class="x">✗ ${esc(m.wrong)}</span><br><span class="k">✓ ${esc(m.right)}</span>${sp(m.right)}</div>${vi(m.reason)}</div>`).join("")}
+    </div>
+    <h3>7 · Luyện tập ✏️ <small>(lần làm đầu tiên được tính điểm)</small></h3>
+    ${T.questions.map((q, i) => `
+      <div class="card q" id="q${ti}_${i}">
+        <p class="en"><b>${i + 1}.</b> ${qtext(q.stem)}</p>
+        ${q.options.map((x, j) => `<button class="opt en" data-a="ans" data-t="${ti}" data-i="${i}" data-j="${j}">${"ABCD"[j]}. ${esc(x)}</button>`).join("")}
+        <div class="fb"></div>
+      </div>
+    `).join("")}
+    <div id="res${ti}"></div>
+    <button data-a="retry">↻ Làm lại trang này</button>
+  `;
+};
+
+const cmp = () => {
+  const C = D.compare;
+  if (!C) return "";
+
+  const branchesHtml = (C.decisionTree || []).map((b, idx) => {
+    const parts = b.split(/→|->/);
+    const qPart = (parts[0] || b).trim();
+    const aPart = (parts[1] || "").trim();
+    let targetIdx = idx;
+    if (C.items && aPart) {
+      const found = C.items.findIndex(it =>
+        it.nameVi.toLowerCase().includes(aPart.toLowerCase()) ||
+        aPart.toLowerCase().includes(it.nameVi.toLowerCase())
+      );
+      if (found !== -1) targetIdx = found;
+    }
+    return `<button class="dbranch-btn ${targetIdx === cmpIdx ? "active" : ""}" data-a="cmp-sel" data-i="${targetIdx}">
+      <span class="dbranch-q">❓ ${esc(qPart)}</span>${aPart ? `<span class="dbranch-a">➜ Chọn: ${esc(aPart)}</span>` : ""}
+    </button>`;
+  }).join("");
+
+  return `
+    <h1>So sánh trực quan <small>Visual Comparison Lab</small></h1>
+
+    <!-- 1. CÂY QUYẾT ĐỊNH BẤM CHỌN (IDEA 3) -->
+    <div class="card">
+      <h3>1 · Cây quyết định bấm chọn 🧭 <small>(chạm vào câu hỏi để xem trục thời gian &amp; biến đổi câu)</small></h3>
+      ${C.mainIdea ? `<p style="margin:.3rem 0">${esc(C.mainIdea)}</p>` : ""}
+      <div class="dtree">${branchesHtml}</div>
+    </div>
+
+    <!-- 2. TRẠM TRỰC QUAN: TRỤC THỜI GIAN ĐỘNG (IDEA 1) + HỘP BIẾN HÌNH CÂU (IDEA 2) -->
+    <div class="card" id="cmp-station">
+      <div class="row" style="margin-bottom:.3rem">
+        <h3 style="margin:0">2 · Trục thời gian động &amp; Hộp biến hình câu 🎬</h3>
+        <button id="cmp-auto-btn" data-a="cmp-auto" class="soft" style="min-height:38px;font-size:.86rem">▶ Tự động chuyển 3 thì</button>
+      </div>
+      <p style="font-size:.88rem;color:var(--mut);margin:.1rem 0 .5rem">Chạm vào từng thì dưới đây để thấy <b>trục thời gian chuyển động</b> và <b>câu của Linh tự động biến hình</b>:</p>
+
+      <div class="cmp-tabs" role="tablist">
+        ${(C.items || []).map((it, idx) => `
+          <button class="cmp-tab ${idx === cmpIdx ? "active" : ""}" data-a="cmp-sel" data-i="${idx}" role="tab">
+            ${idx + 1}. ${esc(it.nameVi)}
+          </button>
+        `).join("")}
+      </div>
+
+      <!-- Khung SVG Timeline chuyển động -->
+      <div id="cmp-tl-wrap" class="tl-box" aria-live="polite"></div>
+
+      <!-- Khung Biến hình câu trên cùng một chủ ngữ -->
+      ${renderLegend()}
+      <div id="cmp-morph-wrap" class="morph-stage" aria-live="polite"></div>
+
+      <!-- Khung Công thức & Dấu hiệu của thì đang chọn -->
+      <div id="cmp-meta-wrap" class="cmp-info-grid"></div>
+
+      ${C.closing ? `<p style="margin:.6rem 0 0;font-size:.93rem">💡 <b>Câu chốt:</b> ${esc(C.closing)}</p>` : ""}
+    </div>
+
+    <!-- 3. ĐỐI CHIẾU NHANH CẢ 3 CÂU CẠNH NHAU -->
+    ${C.examples && C.examples.length ? `
+      <div class="card">
+        <h3>3 · Đặt cạnh nhau: ${esc(C.sameVerbTitle)} 🔍 <small>(chạm vào dòng bất kỳ để xem trên trục)</small></h3>
+        ${C.examples.map((ex, idx) => `
+          <div class="pair cmp-side-row ${idx === cmpIdx ? "active" : ""}" data-a="cmp-sel" data-i="${idx}">
+            <div style="font-size:.82rem;color:var(--pri);font-weight:700">${esc(ex.label)}</div>
+            <div class="en"><p>${renderChunkSentence(ex.chunks)}</p></div>${ex.vi ? vi(ex.vi) : ""}
+          </div>
+        `).join("")}
+      </div>
+    ` : ""}
+  `;
+};
+
+const mix = () => `
+  <h1>Ôn tập tổng hợp <small>Mixed review</small></h1>
+  ${D.review.note ? `<p>💡 <b>Ghi chú:</b> ${esc(D.review.note)}</p>` : ""}
+  ${D.review.questions.map((m, i) => `
+    <div class="card q" id="m${i}">
+      <p class="en"><b>${i + 1}.</b> ${esc(m.stem)}</p>
+      <input type="text" id="in${i}" placeholder="Gõ đáp án…" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="Đáp án câu ${i + 1}">
+      <button data-a="chk" data-i="${i}" class="pri">Kiểm tra</button>
+      <div class="fb"></div>
+    </div>
+  `).join("")}
+  <div id="resm"></div>
+  <button data-a="retry">↻ Làm lại trang này</button>
+`;
+
+const tab = () => `
+  <h1>Bảng tổng hợp <small>Summary table</small></h1>
+  <div class="card tw">
+    <table class="stbl">
+      <tr><th>Điểm ngữ pháp</th><th>Công thức</th><th>Dấu hiệu nhận biết</th><th>Ví dụ</th></tr>
+      ${D.points.map(t => {
+        const fArr = (t.formulas || []).map(f => renderFormula(f.val, f.label.replace(/^Công thức\s+/i, "")));
+        const ex1 = t.exampleList && t.exampleList[0];
+        return `<tr>
+          <td data-l="Điểm ngữ pháp"><b>${esc(t.nameVi)}</b><br>${esc(t.nameEn)}</td>
+          <td data-l="Công thức">${fArr.join("")}</td>
+          <td data-l="Dấu hiệu nhận biết">${renderSignals(t.signals)}</td>
+          <td data-l="Ví dụ" class="en">${ex1 ? renderPair(ex1) : ""}</td>
+        </tr>`;
+      }).join("")}
+    </table>
+  </div>
+`;
+
+function fin() {
+  const rows = [];
+  D.points.forEach((t, i) => {
+    const nQ = t.questions.length;
+    const [c, a] = sc("q" + i + "_", nQ);
+    rows.push([t.nameVi, c, nQ, a, st.t[2 + i] || 0, 2 + i]);
+  });
+  {
+    const nR = D.review.questions.length;
+    const [c, a] = sc("m", nR);
+    rows.push(["Ôn tập tổng hợp", c, nR, a, st.t[REV_PG] || 0, REV_PG]);
+  }
+  const done = rows.filter(r => r[3] > 0);
+  const pc = r => r[2] ? r[1] / r[2] : 0;
+  const tc = rows.reduce((a, r) => a + r[1], 0);
+  const tn = rows.reduce((a, r) => a + r[2], 0);
+  const best = done.slice().sort((a, b) => pc(b) - pc(a))[0];
+  const worst = done.slice().sort((a, b) => pc(a) - pc(b))[0];
+  const rev = rows.filter(r => r[3] < r[2] || pc(r) < 0.7);
+
+  return `
+    <h1>Tổng kết <small>Final summary</small></h1>
+    <div class="card">
+      <h3>🏆 Tổng điểm: ${tc} / ${tn} · ⏱ ${fmt(tot())}</h3>
+      <div class="tw">
+        <table>
+          <tr><th>Phần</th><th>Điểm</th><th>Thời gian</th></tr>
+          ${rows.map(r => `<tr><td>${esc(r[0])}</td><td>${r[3] ? r[1] + " / " + r[2] : "–"}</td><td>${fmt(r[4])}</td></tr>`).join("")}
+        </table>
+      </div>
+      <p>💪 Làm tốt nhất: <b>${best ? esc(best[0]) : "–"}</b> · 📌 Cần cải thiện: <b>${worst ? esc(worst[0]) : "–"}</b></p>
+      <p>Nên ôn lại các trang sau:</p>
+      ${rev.length ? `<div class="ctl">` + rev.map(r => `<button data-a="go" data-p="${r[5]}">${esc(r[0])}</button>`).join("") + `</div>` : "<p>🎉 Làm tốt lắm! Không cần ôn thêm.</p>"}
+      <p style="margin-top:1rem"><button data-a="restart" class="pri">↺ Học lại từ đầu</button></p>
+    </div>
+  `;
+}
+
+const PG = [
+  wel,
+  ovw,
+  ...D.points.map((_, i) => () => tp(i)),
+  ...(HAS_CMP ? [cmp] : []),
+  mix,
+  tab,
+  fin
+];
+
+/* =====================  ĐIỀU HƯỚNG & XỬ LÝ SỰ KIỆN  ===================== */
+function go(p) {
+  pg = Math.max(0, Math.min(N - 1, p));
+  st.p = pg;
+  stopA();
+  stopCmpAuto();
+  A = null;
+  stopSay();
+
+  if (PARSE_ERRORS.length) {
+    $("#m").innerHTML = `<div class="err-box"><h3>⚠️ Lỗi dữ liệu bài học</h3><ul>${PARSE_ERRORS.map(e => `<li>${esc(e)}</li>`).join("")}</ul></div>`;
+    return;
+  }
+
+  $("#m").innerHTML = `<section class="page">${PG[pg]()}</section>`;
+  window.scrollTo(0, 0);
+
+  if (pg >= 2 && pg < 2 + D.points.length) {
+    anim(pg - 2, 0);
+  } else if (HAS_CMP && pg === 2 + D.points.length) {
+    updateCompareLab(cmpIdx, false);
+  }
+
+  $("#pg").textContent = `Trang ${pg + 1} / ${N} ·${Math.round((pg + 1) / N * 100)}%`;
+  $("#pb").style.width = ((pg + 1) / N * 100) + "%";
+
+  [...$("#menu").options].forEach((o, i) => {
+    const isDone = (i >= 2 && i < 2 + D.points.length && st.d[i - 2]) || (i === REV_PG && st.d.m);
+    o.textContent = (isDone ? "✔ " : "") + (i + 1) + ". " + TITLES[i];
+  });
+
+  $("#menu").value = pg;
+  $("#pv").disabled = !pg;
+  $("#nx").disabled = pg === N - 1;
+  tick();
+  save();
+}
+
+function finish(key, pre, n, box) {
+  let all = true;
+  for (let i = 0; i < n; i++) {
+    if (st.f[pre + i] === undefined) all = false;
+  }
+  if (all) {
+    st.d[key] = 1;
+    const [c] = sc(pre, n);
+    const el = $(box);
+    if (el) {
+      el.innerHTML = `<div class="card pop">✅ Hoàn thành phần này! Điểm (lần đầu): <b>${c} / ${n}</b>${c === n ? "🎉" : ""}</div>`;
+    }
+    [...$("#menu").options].forEach((o, i) => {
+      if ((i === key + 2 || (key === "m" && i === REV_PG)) && !o.textContent.startsWith("✔")) {
+        o.textContent = "✔ " + o.textContent;
+      }
+    });
+    save();
+  }
+}
+
+const nz = s => String(s || "").toLowerCase().replace(/[’‘`]/g, "'").replace(/\s+/g, " ").trim();
+
+document.addEventListener("click", e => {
+  const spkBtn = e.target.closest(".spk");
+  if (spkBtn && spkBtn.dataset.say) {
+    say(spkBtn.dataset.say, spkBtn, spkBtn.parentElement);
+    return;
+  }
+
+  const cmpRow = e.target.closest("[data-a='cmp-sel']");
+  if (cmpRow && !e.target.closest(".spk")) {
+    stopCmpAuto();
+    updateCompareLab(+cmpRow.dataset.i, false);
+    return;
+  }
+
+  const b = e.target.closest("button");
+  if (!b) {
+    const w = e.target.closest(".en") && !e.target.closest(".vi") && wordAt(e.clientX, e.clientY);
+    if (w) say(w, null, null);
+    return;
+  }
+  const d = b.dataset;
+  if (d.say) {
+    say(d.say, b, b.parentElement);
+    return;
+  }
+  switch (d.a) {
+    case "play": play(); break;
+    case "pause": stopA(); break;
+    case "replay": stopA(); if (A) { show(0, true); play(); } break;
+    case "next": stopA(); if (A && A.s < A.maxS) show(A.s + 1); break;
+    case "anim-ex": if (pg >= 2 && pg < 2 + D.points.length) anim(pg - 2, +d.ex); break;
+    case "cmp-auto": {
+      if (cmpAutoTmr) {
+        stopCmpAuto();
+      } else if (D.compare && D.compare.items && D.compare.items.length) {
+        b.textContent = "⏸ Dừng tự động";
+        updateCompareLab((cmpIdx + 1) % D.compare.items.length, false);
+        cmpAutoTmr = setInterval(() => {
+          if (!D.compare || !D.compare.items) return stopCmpAuto();
+          updateCompareLab((cmpIdx + 1) % D.compare.items.length, false);
+        }, 2800);
+      }
+      break;
+    }
+    case "rev": {
+      const target = document.getElementById(d.t);
+      if (target) target.classList.toggle("hid");
+      break;
+    }
+    case "retry": go(pg); break;
+    case "go": go(+d.p); break;
+    case "restart":
+      st = { t: {}, f: {}, d: {}, p: 0 };
+      save();
+      go(0);
+      break;
+    case "ans": {
+      const ti = +d.t, i = +d.i, j = +d.j;
+      const pt = D.points[ti];
+      const q = pt.questions[i];
+      const c = b.closest(".q");
+      if (!q || !c || c.dataset.done) return;
+      c.dataset.done = 1;
+      const ok = j === q.ansIdx;
+      const k = "q" + ti + "_" + i;
+      if (!(k in st.f)) st.f[k] = ok;
+      c.querySelectorAll(".opt").forEach((o, x) => {
+        o.disabled = true;
+        if (x === q.ansIdx) o.classList.add("ok");
+        else if (x === j) o.classList.add("bad");
+      });
+      c.querySelector(".fb").innerHTML = `${ok ? "🎉 Chính xác!" : "❌ Chưa đúng."} <span class="en">Đáp án: <b>${esc(q.options[q.ansIdx])}</b></span>${vi(q.explain)}`;
+      if (ok) c.classList.add("pop");
+      save();
+      finish(ti, "q" + ti + "_", pt.questions.length, "#res" + ti);
+      break;
+    }
+    case "chk": {
+      const i = +d.i;
+      const m = D.review.questions[i];
+      const c = b.closest(".q");
+      const inp = $("#in" + i);
+      if (!m || !c || !inp) return;
+      const ok = nz(inp.value) === nz(m.ans);
+      const k = "m" + i;
+      if (!(k in st.f)) st.f[k] = ok;
+      c.querySelector(".fb").innerHTML = `${ok ? "🎉 Chính xác!" : "❌ Chưa đúng."} <span class="en">Đáp án: <b>${esc(m.ans)}</b></span>${vi(m.explain)}`;
+      if (ok) c.classList.add("pop");
+      save();
+      finish("m", "m", D.review.questions.length, "#resm");
+      break;
+    }
+  }
+});
+
+$("#pv").onclick = () => go(pg - 1);
+$("#nx").onclick = () => go(pg + 1);
+$("#menu").innerHTML = TITLES.map((_, i) => `<option value="${i}"></option>`).join("");
+$("#menu").onchange = e => go(+e.target.value);
+$("#vc").onchange = e => { lang = e.target.value; };
+$("#sp").onchange = e => { rate = +e.target.value; };
+
+document.addEventListener("keydown", e => {
+  if (e.target.tagName === "INPUT" && e.key === "Enter") {
+    const b = e.target.parentElement.querySelector("[data-a=chk]");
+    if (b) b.click();
+  }
+  if (e.key === "Escape") stopSay();
+});
+
+/* CHỐNG SAO CHÉP */
+["copy", "cut", "paste", "contextmenu", "dragstart", "selectstart"].forEach(ev => {
+  document.addEventListener(ev, e => {
+    if (ev === "selectstart" && document.activeElement && document.activeElement.tagName === "INPUT") return;
+    e.preventDefault();
+  });
+});
+document.addEventListener("keydown", e => {
+  const k = e.key ? e.key.toLowerCase() : "";
+  const m = e.ctrlKey || e.metaKey;
+  if (e.key === "F12" || (m && ["c", "x", "v", "a", "s", "p", "u"].includes(k)) || (m && e.shiftKey && ["i", "j", "c"].includes(k))) {
+    e.preventDefault();
+  }
+});
+
+/* ===== TỐI ƯU DI ĐỘNG ===== */
+(function() {
+  const ft = $("footer"), root = document.documentElement;
+  const fh = () => root.style.setProperty("--fh", ft.offsetHeight + "px");
+  fh();
+  addEventListener("resize", fh);
+  if (window.ResizeObserver) new ResizeObserver(fh).observe(ft);
+  $("#gear").onclick = () => {
+    const h = $("#set").classList.toggle("hid");
+    $("#gear").setAttribute("aria-expanded", String(!h));
+  };
+  document.addEventListener("focusin", e => {
+    if (e.target.tagName === "INPUT") {
+      document.body.classList.add("kb");
+      setTimeout(() => e.target.scrollIntoView({ block: "center", behavior: "smooth" }), 300);
+    }
+  });
+  document.addEventListener("focusout", e => {
+    if (e.target.tagName === "INPUT") document.body.classList.remove("kb");
+  });
+})();
+
+go(st.p || 0);
+</script>
+</body>
+</html>
